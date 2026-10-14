@@ -18,6 +18,8 @@ Research-ai-skills/
 └── tests/        # Skill 和 Prompt 的检查清单
 ```
 
+Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`prompts/README.md`](prompts/README.md)。兼容性说明见 [`docs/compatibility.md`](docs/compatibility.md)。
+
 ### 当前规划
 
 第一阶段计划建设以下 Skills：
@@ -59,6 +61,8 @@ Research-ai-skills/
 ├── docs/         # Design principles, compatibility, and limitations
 └── tests/        # Checklists for evaluating Skills and Prompts
 ```
+
+See [`skills/README.md`](skills/README.md) for the Skill index, [`prompts/README.md`](prompts/README.md) for the Prompt index, and [`docs/compatibility.md`](docs/compatibility.md) for platform notes.
 
 ### Current roadmap
 
