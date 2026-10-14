@@ -7,3 +7,11 @@
 ## English
 
 This directory contains tested prompts for individual tasks. Each prompt should document its use case, required inputs, expected outputs, and limitations.
+
+## Available prompts / 可用 Prompt
+
+- [`academic-writing/section-revision.md`](academic-writing/section-revision.md)
+- [`paper-review/claim-evidence-check.md`](paper-review/claim-evidence-check.md)
+- [`literature-analysis/search-plan.md`](literature-analysis/search-plan.md)
+- [`statistical-analysis/method-comparison.md`](statistical-analysis/method-comparison.md)
+- [`figure-generation/figure-specification.md`](figure-generation/figure-specification.md)
