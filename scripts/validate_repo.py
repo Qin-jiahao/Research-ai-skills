@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Small dependency-free static checks for this repository."""
 from pathlib import Path
+import json
 import re, sys
 root = Path(__file__).resolve().parents[1]
 errors=[]
@@ -42,6 +43,26 @@ for readme, directory in [('skills/README.md','skills'),('prompts/README.md','pr
     missing = expected_links - indexed_links
     for item in sorted(missing):
         errors.append(f'{readme}: missing index entry {item}')
+catalog_path = root/'catalog/resources.json'
+if not catalog_path.exists():
+    errors.append('catalog/resources.json: missing')
+else:
+    try:
+        catalog = json.loads(catalog_path.read_text(encoding='utf-8'))
+        resources = catalog['resources']
+        ids = [item.get('id') for item in resources]
+        expected_ids = [f'R{i:02d}' for i in range(1, 32)]
+        if ids != expected_ids:
+            errors.append('catalog/resources.json: IDs must be exactly R01-R31 in order')
+        allowed = {'collected','reviewed','tested','released'}
+        required = {'id','name','type','category','status','path','source_url','reason'}
+        for item in resources:
+            missing = required - item.keys()
+            if missing: errors.append(f"catalog/{item.get('id','?')}: missing fields {sorted(missing)}")
+            if item.get('status') not in allowed: errors.append(f"catalog/{item.get('id','?')}: invalid status")
+            if item.get('path') and not (root/item['path']).exists(): errors.append(f"catalog/{item.get('id','?')}: missing local path {item['path']}")
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        errors.append(f'catalog/resources.json: invalid catalog ({exc})')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print(f'validated {len(seen)} Skills and bilingual Prompt files')

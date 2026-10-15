@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 - 2026-10-16
+
+- Added a canonical bilingual resource catalog covering R01–R31.
+- Added explicit resource states for collected, reviewed, tested, and released material.
+- Added a safe local Skill installer and extended static validation to check catalog IDs and local paths.
+- Documented installation and coverage test boundaries without claiming unverified client compatibility.
+
 ## [0.1.0] - 2026-10-14
 
 - 建立双语 README 和基础仓库结构。

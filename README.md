@@ -105,3 +105,9 @@ See [`docs/installation.md`](docs/installation.md) for installation instructions
 ### License and attribution
 
 Original content in this repository will be released under the license declared at the repository root. Materials with known sources will retain the original author, project, and license information. Materials with unclear provenance will be marked as “Source: online materials, independently organized and summarized” and will not be copied verbatim.
+
+## Resource catalog
+
+The complete bilingual R01–R31 inventory is in [`catalog/resources.json`](catalog/resources.json), with definitions in [`catalog/README.md`](catalog/README.md). Coverage and test boundaries are documented in [`tests/resource-coverage.md`](tests/resource-coverage.md).
+
+The local installer is `scripts/install_skill.py`. It copies one local Skill to a user-selected destination and refuses to overwrite an existing directory unless `--force` is provided.
