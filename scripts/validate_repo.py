@@ -22,7 +22,26 @@ for path in sorted((root/'prompts').glob('*/*.md')):
     text=path.read_text(encoding='utf-8')
     if '中文' not in text or 'English' not in text: errors.append(f'{path}: bilingual sections missing')
 for readme, directory in [('skills/README.md','skills'),('prompts/README.md','prompts')]:
-    if not (root/readme).exists(): errors.append(f'{readme}: missing')
+    index = root/readme
+    if not index.exists():
+        errors.append(f'{readme}: missing')
+        continue
+    links = re.findall(r'\[[^]]+\]\(([^)]+)\)', index.read_text(encoding='utf-8'))
+    for link in links:
+        if link.startswith(('http://','https://','#')):
+            continue
+        target = (index.parent/link).resolve()
+        if not target.exists():
+            errors.append(f'{readme}: broken local link {link}')
+    expected = sorted((root/directory).glob('*/SKILL.md' if directory=='skills' else '*/*.md'))
+    if directory == 'skills':
+        expected_links = {f'{p.parent.name}/SKILL.md' for p in expected}
+    else:
+        expected_links = {f'{p.parent.name}/{p.name}' for p in expected}
+    indexed_links = {x for x in links if not x.startswith(('http://','https://','#'))}
+    missing = expected_links - indexed_links
+    for item in sorted(missing):
+        errors.append(f'{readme}: missing index entry {item}')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print(f'validated {len(seen)} Skills and bilingual Prompt files')
