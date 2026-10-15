@@ -32,8 +32,16 @@ Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`pr
 - `rnaseq-analysis`：bulk RNA-seq 分析规划、质量控制和结果审查
 - `research-coding`：科研代码整理、可复现性和代码审查
 - `research-presentation`：科研汇报的故事线、逐页结构和证据核查
+- `scientific-interface-design`：科研软件界面和交互设计
+- `academic-language-polish`：保留科学含义的学术语言润色
+- `agent-memory-handoff`：跨会话项目记忆和任务交接
+- `multi-agent-review`：多角色科研审查和分歧记录
 
 后续内容会根据实际测试和使用反馈继续扩展。
+
+### 安装与使用
+
+安装说明见 [`docs/installation.md`](docs/installation.md)。正式发布和草稿状态见 [`docs/resource-status.md`](docs/resource-status.md)。
 
 ### 使用原则
 
@@ -81,6 +89,10 @@ The repository currently includes the following Skills. Each file and the change
 - `research-presentation`: storylines, slide structures, and claim-evidence checks
 
 Future additions will follow actual testing and usage feedback.
+
+### Installation and use
+
+See [`docs/installation.md`](docs/installation.md) for installation instructions and [`docs/resource-status.md`](docs/resource-status.md) for release status.
 
 ### Usage principles
 
