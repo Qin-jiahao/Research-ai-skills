@@ -2,11 +2,11 @@
 
 ## 中文
 
-`Research-ai-skills` 是一个面向科研工作的 AI Skills 与 Prompt 集合，重点覆盖论文写作、文献分析、科研数据处理、科研绘图和科研编程。
+`Research-ai-skills` 是一个面向科研工作的 AI Skills 与 Prompt 集合，覆盖论文写作、文献分析、统计分析、科研绘图、转录组分析、科研代码和科研汇报。
 
 项目地址：[github.com/Qin-jiahao/Research-ai-skills](https://github.com/Qin-jiahao/Research-ai-skills)
 
-本项目的内容会经过重新整理、改写和测试。网络截图和其他公开材料只作为参考来源，不直接作为最终内容发布。
+已发布内容会在发布前经过整理、改写和检查。当前未发布的工作区改动仍需完成来源核验和行为评估。网络截图和其他公开材料只作为参考来源，不直接作为最终内容发布。
 
 ### 项目结构
 
@@ -20,17 +20,20 @@ Research-ai-skills/
 
 Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`prompts/README.md`](prompts/README.md)。兼容性说明见 [`docs/compatibility.md`](docs/compatibility.md)。
 
-### 当前规划
+### 当前收录的 Skills
 
-第一阶段计划建设以下 Skills：
+当前收录以下 Skills。各文件和变更日志中的状态用于区分已发布内容与未发布草稿。
 
 - `academic-writing`：论文段落和章节写作
 - `paper-review`：论文结构、方法和论证检查
 - `literature-analysis`：文献检索、筛选和证据整理
 - `statistical-analysis`：统计方法选择和结果解释
 - `figure-generation`：科研图表设计和生成规范
+- `rnaseq-analysis`：bulk RNA-seq 分析规划、质量控制和结果审查
+- `research-coding`：科研代码整理、可复现性和代码审查
+- `research-presentation`：科研汇报的故事线、逐页结构和证据核查
 
-后续会根据测试结果加入 RNA-seq 分析、科研编程和研究汇报等内容。
+后续内容会根据实际测试和使用反馈继续扩展。
 
 ### 使用原则
 
@@ -46,11 +49,11 @@ Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`pr
 
 ## English
 
-`Research-ai-skills` is a collection of AI Skills and Prompts for research work. It focuses on academic writing, literature analysis, scientific data processing, research visualization, and research coding.
+`Research-ai-skills` is a collection of AI Skills and Prompts for research work. It covers academic writing, literature analysis, statistics, research figures, transcriptomics, research code, and scientific presentations.
 
 Project repository: [github.com/Qin-jiahao/Research-ai-skills](https://github.com/Qin-jiahao/Research-ai-skills)
 
-The materials in this repository are reorganized, rewritten, and tested before publication. Screenshots and other public materials are treated as references only and are not copied directly as final content.
+Published materials are reorganized, rewritten, and checked before release. Unreleased working-tree changes still require provenance review and behavioral evaluation. Screenshots and other public materials are treated as references only and are not copied directly as final content.
 
 ### Repository structure
 
@@ -64,17 +67,20 @@ Research-ai-skills/
 
 See [`skills/README.md`](skills/README.md) for the Skill index, [`prompts/README.md`](prompts/README.md) for the Prompt index, and [`docs/compatibility.md`](docs/compatibility.md) for platform notes.
 
-### Current roadmap
+### Skills currently included
 
-The first phase will focus on:
+The repository currently includes the following Skills. Each file and the changelog records whether content is released or still under evaluation.
 
 - `academic-writing`: writing research paragraphs and sections
 - `paper-review`: checking structure, methods, and reasoning
 - `literature-analysis`: searching, screening, and organizing evidence
 - `statistical-analysis`: choosing methods and interpreting results
 - `figure-generation`: specifications for research figures and charts
+- `rnaseq-analysis`: planning, quality control, and auditing bulk RNA-seq workflows
+- `research-coding`: organizing research code and checking reproducibility
+- `research-presentation`: storylines, slide structures, and claim-evidence checks
 
-RNA-seq analysis, research coding, and research presentation workflows may be added after further testing.
+Future additions will follow actual testing and usage feedback.
 
 ### Usage principles
 

@@ -1,3 +1,8 @@
+---
+name: academic-writing
+description: Draft, revise, and check academic manuscript sections when supplied evidence must be preserved; 在需要保留已有证据并起草、改写或检查论文段落时使用。
+---
+
 # Academic Writing / 学术写作
 
 **Status / 状态:** v0.1.0 draft
@@ -7,6 +12,12 @@
 帮助研究者起草、重组和检查学术论文文本。这个 Skill 只处理已有信息，不生成实验结果、参考文献或研究结论。
 
 This Skill helps researchers draft, restructure, and check academic manuscripts. It works only with supplied information and must not fabricate results, references, or conclusions.
+
+## When to use / 适用场景
+
+在已有论文材料、目标章节和明确写作任务时使用。它适合改写段落、检查主张与证据的对应关系，以及按照已提供的期刊要求调整表达。
+
+Use it when manuscript material, a target section, and a defined writing task are available. It is suitable for paragraph revision, claim–evidence checks, and applying supplied journal requirements.
 
 ## When to use / 适用场景
 
@@ -68,12 +79,30 @@ Verification notes / 核查提示
 
 It cannot validate experiments or guarantee peer-review acceptance. Journal requirements should be checked against the official author guidelines.
 
-## Example / 示例
+## Examples / 示例
 
-**Input / 输入:** 一段 Results 文本、研究设计和图表说明，要求改善逻辑但不改变数值。
+### Complete input / 完整输入
 
-**Expected output / 预期输出:** 保留所有数值的修改稿、逐项修改说明，以及对缺少样本量或统计方法的提示。
+**Input / 输入:** 一段 Results 文本、研究设计、图表说明、统计方法和目标期刊的语言要求。任务是改善逻辑，但不改变原始数值、比较对象或结论范围。
 
-## Scope
+**Expected handling / 预期处理:** 输出保留原始事实的修改稿、逐项修改理由、主张与证据对应关系，以及仍需作者核对的问题。没有提供的内容标记为“待补充 / to be provided”。
 
-第一版将明确支持的章节、输入材料、输出格式和质量检查方法。
+**Input / English:** A Results paragraph, study design, figure caption, statistical method, and supplied journal style requirements are provided. The task is to improve logic without changing values, comparisons, or the scope of the conclusion.
+
+**Expected handling / Expected output:** Return a fact-preserving revision, itemized reasons, claim–evidence links, and questions for author verification. Mark absent information as “待补充 / to be provided.”
+
+### Incomplete input / 信息不足
+
+**Input / 输入:** 只有一句“处理组效果更好”，没有原文上下文、比较对象、样本信息或统计方法。
+
+**Expected handling / 预期处理:** 不改写成确定结论。先列出缺失的比较对象、结局定义、统计方法和证据位置，并说明只能提供结构化提问。
+
+**Input / English:** Only the sentence “the treatment worked better” is supplied, without context, comparator, sample information, or statistical method.
+
+**Expected handling / Expected output:** Do not turn it into a definite conclusion. List the missing comparator, outcome definition, statistical method, and evidence location, and state that only a structured clarification is possible.
+
+## Source / 来源
+
+来源状态：来源于网络，自行整理汇总；当前未完成逐项作者、URL、许可证和版本核验。
+
+Source status: collected from public online materials and independently reorganized; author, URL, license, and version have not yet been verified item by item.

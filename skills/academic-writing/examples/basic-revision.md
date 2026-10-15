@@ -10,9 +10,9 @@
 
 ## Expected output / 预期输出
 
-指出“显著”需要统计方法、效应量和不确定性支持，并指出“improves”可能包含未经设计支持的因果解释。修改时保留原始比较，不新增数值。
+指出“显著”需要明确的统计检验、模型、假设和检验结果；效应量与不确定性用于说明效应大小和精确度。还要指出“improves”可能包含未经研究设计支持的因果解释。修改时保留原始比较，不新增数值。
 
-The output should flag that “significant” requires the statistical test, effect size, and uncertainty, and that “improves” may overstate causal evidence. The revision should preserve the reported comparison and add no values.
+The output should distinguish the statistical test, model, assumptions, and test result needed to assess “significant” from the effect size and uncertainty used to describe magnitude and precision. It should also flag that “improves” may overstate causal evidence. The revision should preserve the reported comparison and add no values.
 
 ## Source / 来源
 
