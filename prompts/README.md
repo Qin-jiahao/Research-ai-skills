@@ -22,3 +22,8 @@ This directory contains organized prompts for individual tasks. Test status and 
 - [`research-planning/plan-and-handoff.md`](research-planning/plan-and-handoff.md)
 - [`figure-evidence-audit/figure-audit.md`](figure-evidence-audit/figure-audit.md)
 - [`source-reuse-review/reuse-review.md`](source-reuse-review/reuse-review.md)
+
+- [`agent-memory-handoff/workflow.md`](agent-memory-handoff/workflow.md)
+- [`multi-agent-review/workflow.md`](multi-agent-review/workflow.md)
+- [`academic-language-polish/workflow.md`](academic-language-polish/workflow.md)
+- [`scientific-interface-design/workflow.md`](scientific-interface-design/workflow.md)

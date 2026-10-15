@@ -39,3 +39,8 @@ This directory contains research workflows that require multiple steps, explicit
 | [source-reuse-review](source-reuse-review/SKILL.md) | Reviewing open-source reuse, licenses, and maintenance status |
 
 These files define workflows and do not contain real research data. Generated content must be checked against the original data, full-text sources, and study design.
+
+- [agent-memory-handoff](agent-memory-handoff/SKILL.md)
+- [multi-agent-review](multi-agent-review/SKILL.md)
+- [academic-language-polish](academic-language-polish/SKILL.md)
+- [scientific-interface-design](scientific-interface-design/SKILL.md)
