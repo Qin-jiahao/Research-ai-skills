@@ -17,6 +17,10 @@
 | [research-planning](research-planning/SKILL.md) | 研究计划、风险、里程碑和交接记录 |
 | [figure-evidence-audit](figure-evidence-audit/SKILL.md) | 图表与数据、主张、方法和来源的对应审查 |
 | [source-reuse-review](source-reuse-review/SKILL.md) | 开源项目复用、许可证和维护状态审查 |
+| [agent-memory-handoff](agent-memory-handoff/SKILL.md) | 跨会话项目记忆和任务交接 |
+| [multi-agent-review](multi-agent-review/SKILL.md) | 多角色科研审查和分歧记录 |
+| [academic-language-polish](academic-language-polish/SKILL.md) | 保留科学含义的学术语言润色 |
+| [scientific-interface-design](scientific-interface-design/SKILL.md) | 科研软件界面和交互设计 |
 
 这些文件是工作流规范，不包含任何真实研究数据。模型生成的内容仍需结合原始数据、文献全文和研究设计进行核验。
 
@@ -37,6 +41,10 @@ This directory contains research workflows that require multiple steps, explicit
 | [research-planning](research-planning/SKILL.md) | Research plans, risks, milestones, and handoff records |
 | [figure-evidence-audit](figure-evidence-audit/SKILL.md) | Auditing links among figures, data, claims, methods, and provenance |
 | [source-reuse-review](source-reuse-review/SKILL.md) | Reviewing open-source reuse, licenses, and maintenance status |
+| [agent-memory-handoff](agent-memory-handoff/SKILL.md) | Cross-session project memory and handoffs |
+| [multi-agent-review](multi-agent-review/SKILL.md) | Role-based research review and disagreement tracking |
+| [academic-language-polish](academic-language-polish/SKILL.md) | Academic language polishing with meaning preservation |
+| [scientific-interface-design](scientific-interface-design/SKILL.md) | Research-software interface and interaction planning |
 
 These files define workflows and do not contain real research data. Generated content must be checked against the original data, full-text sources, and study design.
 
