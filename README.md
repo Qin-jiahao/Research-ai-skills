@@ -22,6 +22,8 @@ Research-ai-skills/
 
 Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`prompts/README.md`](prompts/README.md)。兼容性说明见 [`docs/compatibility.md`](docs/compatibility.md)。工具目录见 [`tools/README.md`](tools/README.md)，资源状态和维护规则见 [`docs/maintenance.md`](docs/maintenance.md)。
 
+截图逐张整理见 [`docs/screenshot-intake-2026-10.md`](docs/screenshot-intake-2026-10.md)，外部项目来源和许可证核验记录见 [`docs/external-projects.md`](docs/external-projects.md)。
+
 ### 当前收录的 Skills
 
 当前收录以下 Skills。各文件和变更日志中的状态用于区分已发布内容与未发布草稿。
@@ -78,6 +80,8 @@ Research-ai-skills/
 ```
 
 See [`skills/README.md`](skills/README.md) for the Skill index, [`prompts/README.md`](prompts/README.md) for the Prompt index, [`tools/README.md`](tools/README.md) for tool notes, and [`docs/compatibility.md`](docs/compatibility.md) for platform notes. Maintenance rules are in [`docs/maintenance.md`](docs/maintenance.md).
+
+The image-by-image intake ledger is [`docs/screenshot-intake-2026-10.md`](docs/screenshot-intake-2026-10.md). External project sources and license verification notes are in [`docs/external-projects.md`](docs/external-projects.md).
 
 ### Skills currently included
 

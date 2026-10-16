@@ -17,6 +17,14 @@
 
 ## [Unreleased]
 
+- 建立 35 张截图的双语整理台账，区分已独立改写的 Prompt、外部项目线索和待核验内容；补充公开项目链接、作者归属与许可证边界说明。
+- 新增需求文档、CI 失败诊断、数据先行绘图、五视角审查、期刊元数据核验和有证据边界的自然化润色 Prompt。
+- 修正资源目录中的外部项目入口和新增 Prompt 路径，不把截图中的宣传语、示例数值或运行结果写成科研事实。
+
+- Added a bilingual intake ledger for all 35 screenshots, separating independently rewritten Prompts, external project leads, and unresolved provenance; added public links, attribution, and license boundaries.
+- Added Prompts for requirements before implementation, CI failure diagnosis, data-first figures, five-perspective review, journal metadata checks, and evidence-bounded naturalization.
+- Updated external project links and local Prompt paths in the resource catalog without treating screenshot claims, example values, or execution results as research facts.
+
 - 加入双语 `rnaseq-analysis` Skill、Prompt 和工作流示例。
 - 加入双语 `research-coding` Skill、Prompt 和可复现分析示例。
 - 加入双语 `research-presentation` Skill、Prompt 和逐页汇报示例。

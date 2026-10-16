@@ -21,10 +21,10 @@
     {"id":"R11","name":"long-paper-writing","type":"skill","category":"writing","status":"released","path":"skills/academic-writing/SKILL.md","source_url":null,"reason":"已覆盖长文结构、证据边界和学术表达。"},
     {"id":"R12","name":"create-plan","type":"skill","category":"planning","status":"released","path":"skills/research-planning/SKILL.md","source_url":null,"reason":"已并入研究规划流程。"},
     {"id":"R13","name":"superpowers-methodology","type":"external-project","category":"workflow","status":"collected","path":null,"source_url":"https://github.com/obra/superpowers","reason":"记录外部开发方法论，不复制其实现。"},
-    {"id":"R14","name":"gh-fix-ci","type":"prompt","category":"ci","status":"released","path":"prompts/research-coding/code-review-plan.md","source_url":null,"reason":"已覆盖 CI 失败诊断、修复和复核。"},
+    {"id":"R14","name":"gh-fix-ci","type":"prompt","category":"ci","status":"released","path":"prompts/research-coding/ci-failure-diagnosis.md","source_url":null,"reason":"已将截图中的日志定位、最小修复和复核主题独立改写为双语 Prompt。"},
     {"id":"R15","name":"omicsclaw","type":"external-project","category":"omics","status":"collected","path":null,"source_url":"https://github.com/TianGzlab/OmicsClaw","reason":"科研多组学工具，保留目录记录，未声称已测试。"},
     {"id":"R16","name":"research-plotting-workflow","type":"skill","category":"figures","status":"released","path":"skills/figure-generation/SKILL.md","source_url":null,"reason":"已覆盖数据理解、图形选择、可编辑导出和审查。"},
-    {"id":"R17","name":"paper-homepage-metadata","type":"prompt","category":"literature","status":"collected","path":"prompts/literature-analysis/search-plan.md","source_url":null,"reason":"记录期刊、标题和作者信息提取需求，动态指标需逐年核验。"},
+    {"id":"R17","name":"paper-homepage-metadata","type":"prompt","category":"literature","status":"released","path":"prompts/literature-analysis/journal-metadata-check.md","source_url":null,"reason":"已独立改写为带来源、访问日期和指标年份的元数据核验 Prompt。"},
     {"id":"R18","name":"three-tier-rnaseq","type":"skill","category":"omics","status":"released","path":"skills/rnaseq-analysis/SKILL.md","source_url":null,"reason":"已覆盖分层 RNA-seq 分析计划和结果审查。"},
     {"id":"R19","name":"research-skills-set","type":"prompt-set","category":"research","status":"released","path":"prompts/academic-writing/section-revision.md","source_url":null,"reason":"论文、引用、统计、绘图和科研头脑风暴已由本仓库对应 Prompt 覆盖。"},
     {"id":"R20","name":"make-interfaces-feel-better","type":"external-project","category":"interface","status":"collected","path":null,"source_url":"https://github.com/jakubkrehel/make-interfaces-feel-better","reason":"记录前端界面经验，未复制项目内容。"},
@@ -33,11 +33,11 @@
     {"id":"R23","name":"codex-ui-failure-cases","type":"prompt","category":"interface","status":"released","path":"prompts/scientific-interface-design/workflow.md","source_url":null,"reason":"已转为界面问题诊断和验收提示。"},
     {"id":"R24","name":"eli5-explanation","type":"prompt","category":"communication","status":"released","path":"prompts/academic-language-polish/workflow.md","source_url":null,"reason":"已覆盖面向非专业读者的分层解释要求。"},
     {"id":"R25","name":"biodeskills","type":"external-project","category":"bioinformatics","status":"collected","path":null,"source_url":"https://github.com/GPTomics/bioSkills","reason":"外部生信 Skill 集合，仅作来源目录。"},
-    {"id":"R26","name":"paperspine-and-nature-tools","type":"external-project","category":"writing","status":"collected","path":null,"source_url":null,"reason":"来自截图的工具集合，缺少可确认的单一官方仓库，暂不伪造链接。"},
+    {"id":"R26","name":"paperspine-and-nature-tools","type":"external-project","category":"writing","status":"collected","path":null,"source_url":"https://github.com/WUBING2023/PaperSpine","reason":"截图列出 PaperSpine 和 Nature 工具；记录可核对的 PaperSpine 入口，其他条目仍需逐项确认。"},
     {"id":"R27","name":"strict-paper-review","type":"prompt","category":"review","status":"released","path":"prompts/paper-review/claim-evidence-check.md","source_url":null,"reason":"已提供严格审稿式的逻辑、方法和语言检查。"},
     {"id":"R28","name":"think-simply-surgical-goal","type":"skill","category":"coding","status":"released","path":"skills/research-coding/SKILL.md","source_url":null,"reason":"已转为先思考、保持简单、精准修改和目标驱动执行。"},
     {"id":"R29","name":"bioclaw-omicskills","type":"external-project","category":"bioinformatics","status":"collected","path":null,"source_url":"https://github.com/zongtingwei/Bioclaw_Skills_Hub","reason":"记录 BioClaw/omicskills 线索，未纳入本地 Skill。"},
     {"id":"R30","name":"k-dense-scientific-agent-skills","type":"external-project","category":"scientific-agents","status":"collected","path":null,"source_url":"https://github.com/K-Dense-AI/scientific-agent-skills","reason":"记录外部科学 Agent Skill 集合，需单独核对版本和许可证。"},
-    {"id":"R31","name":"research-paper-writing-skills","type":"external-project","category":"writing","status":"collected","path":null,"source_url":"https://github.com/Master-cai/Research-Paper-Writing-Skills","reason":"记录论文写作 Skill 仓库，不复制其内容。"}
+    {"id":"R31","name":"research-paper-writing-skills","type":"external-project","category":"writing","status":"collected","path":null,"source_url":"https://github.com/Master-cai/Research-Paper-Writing-Skills","reason":"截图显示 Master-cai 的二次整理仓库，并明确归因于 Prof. Peng Sida 的公开笔记；两个项目的来源和许可证分开核验。"}
   ]
 }
