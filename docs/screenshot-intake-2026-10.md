@@ -24,11 +24,11 @@
 | `Screenshot_20260624_122959_com_tencent_mm_TmplWe.jpg` | Superpowers 的阶段化开发和多 Agent 执行 | 外部项目与规划线索 | 并入计划、审查和验收字段 | 外部项目说明，不代表本仓库兼容性 |
 | `Screenshot_20260624_123006_com_tencent_mm_TmplWe.jpg` | `gh-fix-ci`：读取日志、定位问题、修复后复核 | Prompt 线索 | 新增 `ci-failure-diagnosis` Prompt | 截图名称可读；具体上游实现未复制 |
 | `Screenshot_20260624_123010_com_tencent_mm_TmplWe.jpg` | Humanizer：降低 AI 写作痕迹 | 外部项目与写作线索 | 新增证据约束的自然化润色 Prompt，并保留外部链接 | 官方仓库已找到；不能把自然化当作事实正确性证明 |
-| `Screenshot_20260624_123018_com_tencent_mm_TmplWe.jpg` | `claude-mem`：跨会话记忆 | 外部项目与记忆线索 | 并入交接文档 Skill；外部工具单独记录隐私和权限风险 | 官方仓库已找到；配置和数据传输需用户自行核验 |
+| `Screenshot_20260624_123018_com_tencent_mm_TmplWe.jpg` | `claude-mem`：跨会话记忆 | 外部项目与记忆线索 | 并入交接文档 Skill；外部工具单独记录隐私和权限风险 | 候选公开仓库已找到；截图对应来源、配置和许可证待核验 |
 | `Screenshot_20260624_165527_com_tencent_mm_TmplWe.jpg` | `make-interfaces-feel-better`：界面细节和交互质量 | 外部项目 | 保留科研软件界面设计的抽象检查项 | 官方项目线索已找到；不复制其 Skill |
 | `Screenshot_20260712_143641_com_ss_android_ugc_aw.jpg` | 在长会话结束前写 `HANDOFF.md`，新会话先读交接文档 | Prompt 线索 | 并入 `agent-memory-handoff` | 截图可读；内容已独立改写 |
 | `Screenshot_20260716_225736_com_ss_android_ugc_aw.jpg` | 先理解数据和文献，再生成科研图；保留 SVG 等可编辑输出 | Prompt 线索 | 新增 `data-first-figure-workflow` Prompt | 截图显示建议；不含真实数据授权 |
-| `Screenshot_20260717_193646_com_ss_android_ugc_aw.jpg` | Emil Kowalski 的 Apple 设计 Skill | 外部项目 | 记录设计工程项目，限制在科研软件界面场景 | 官方仓库已找到；与 Apple 无官方隶属关系的表述已保留 |
+| `Screenshot_20260717_193646_com_ss_android_ugc_aw.jpg` | Emil Kowalski 发布的 Apple 风格设计 Skill | 外部项目 | 记录设计工程项目，限制在科研软件界面场景 | 官方仓库已找到；项目与 Apple 无官方隶属关系 |
 | `Screenshot_20260723_000913_com_ss_android_ugc_aw.jpg` | 五种视角协作：反对者、本质思考者、机会挖掘者、局外人、执行者 | Prompt 线索 | 新增 `five-perspective-review` Prompt | 截图可读；角色不是独立事实来源 |
 | `Screenshot_20260724_014354_com_ss_android_ugc_aw.jpg` | 编码前先写 PRD、SOP、路线图和 README，再分阶段执行 | Prompt 线索 | 新增 `requirements-before-implementation` Prompt | 截图可读；“成功率提升”未纳入仓库 |
 | `Screenshot_20260724_232659_com_ss_android_ugc_aw.jpg` | 学术论文、引用、统计、绘图、头脑风暴和汇报技能清单 | 资源索引线索 | 对照现有 Skill 索引，补充缺少的可复用 Prompt | 截图为二次整理表，原始来源待核验 |
