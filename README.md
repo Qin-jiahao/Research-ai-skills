@@ -91,6 +91,13 @@ The repository currently includes the following Skills. Each file and the change
 - `rnaseq-analysis`: planning, quality control, and auditing bulk RNA-seq workflows
 - `research-coding`: organizing research code and checking reproducibility
 - `research-presentation`: storylines, slide structures, and claim-evidence checks
+- `research-planning`: research plans, risks, milestones, and handoff records
+- `figure-evidence-audit`: auditing links among figures, data, claims, methods, and provenance
+- `source-reuse-review`: reviewing open-source reuse, licenses, and maintenance status
+- `agent-memory-handoff`: cross-session project memory and handoffs
+- `multi-agent-review`: role-based research review and disagreement tracking
+- `academic-language-polish`: academic language polishing with meaning preservation
+- `scientific-interface-design`: research-software interface and interaction planning
 
 Future additions will follow actual testing and usage feedback.
 
