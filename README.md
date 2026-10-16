@@ -36,10 +36,13 @@ Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`pr
 - `rnaseq-analysis`：bulk RNA-seq 分析规划、质量控制和结果审查
 - `research-coding`：科研代码整理、可复现性和代码审查
 - `research-presentation`：科研汇报的故事线、逐页结构和证据核查
-- `scientific-interface-design`：科研软件界面和交互设计
-- `academic-language-polish`：保留科学含义的学术语言润色
+- `research-planning`：科研计划、风险、里程碑和任务交接
+- `figure-evidence-audit`：科研图表的数据、主张、方法和来源审查
+- `source-reuse-review`：开源项目复用、许可证和维护状态审查
 - `agent-memory-handoff`：跨会话项目记忆和任务交接
 - `multi-agent-review`：多角色科研审查和分歧记录
+- `academic-language-polish`：保留科学含义的学术语言润色
+- `scientific-interface-design`：科研软件界面和交互设计
 
 后续内容会根据实际测试和使用反馈继续扩展。
 
