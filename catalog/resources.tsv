@@ -1,0 +1,6 @@
+name	type	purpose	url	author_or_maintainer	license	status	verified_date	compatibility	limitations
+GPTomics/bioSkills	project	bioinformatics and omics skill collection	https://github.com/GPTomics/bioSkills	GPTomics	unknown	collected	2026-10-16	unknown	public page indicates archived; verify before reuse
+BioClaw	project	bioinformatics research assistant	https://github.com/Runchuan-BU/BioClaw	Runchuan-BU	unknown	reviewed	2026-10-16	unknown	inspect permissions, dependencies, and license before use
+OmicsClaw	project	conversational multi-omics research assistant	https://github.com/TianGzlab/OmicsClaw	TianGzlab	unknown	reviewed	2026-10-16	unknown	verify current release, data handling, and license
+claude-scientific-skills	project	scientific workflow skill collection	https://github.com/148K/claude-scientific-skills	148K	unknown	reviewed	2026-10-16	unknown	inspect individual files and license before adaptation
+Bioclaw_Skills_Hub	project	community skills hub for bioinformatics workflows	https://github.com/zongtingwei/Bioclaw_Skills_Hub	zongtingwei	unknown	collected	2026-10-16	unknown	per-item provenance and license review required

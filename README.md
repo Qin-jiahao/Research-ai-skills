@@ -14,11 +14,13 @@
 Research-ai-skills/
 ├── skills/       # 复杂的、多步骤科研工作流
 ├── prompts/      # 单个任务或短流程提示词
+├── tools/        # 独立科研工具和开源项目说明
+├── catalog/      # 候选资源和核验状态
 ├── docs/         # 设计原则、兼容性和限制说明
 └── tests/        # Skill 和 Prompt 的检查清单
 ```
 
-Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`prompts/README.md`](prompts/README.md)。兼容性说明见 [`docs/compatibility.md`](docs/compatibility.md)。
+Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`prompts/README.md`](prompts/README.md)。兼容性说明见 [`docs/compatibility.md`](docs/compatibility.md)。工具目录见 [`tools/README.md`](tools/README.md)，资源状态和维护规则见 [`docs/maintenance.md`](docs/maintenance.md)。
 
 ### 当前收录的 Skills
 
@@ -69,11 +71,13 @@ Published materials are reorganized, rewritten, and checked before release. Unre
 Research-ai-skills/
 ├── skills/       # Complex, multi-step research workflows
 ├── prompts/      # Prompts for single tasks or short workflows
+├── tools/        # Independent research tools and project notes
+├── catalog/      # Candidate resources and verification status
 ├── docs/         # Design principles, compatibility, and limitations
 └── tests/        # Checklists for evaluating Skills and Prompts
 ```
 
-See [`skills/README.md`](skills/README.md) for the Skill index, [`prompts/README.md`](prompts/README.md) for the Prompt index, and [`docs/compatibility.md`](docs/compatibility.md) for platform notes.
+See [`skills/README.md`](skills/README.md) for the Skill index, [`prompts/README.md`](prompts/README.md) for the Prompt index, [`tools/README.md`](tools/README.md) for tool notes, and [`docs/compatibility.md`](docs/compatibility.md) for platform notes. Maintenance rules are in [`docs/maintenance.md`](docs/maintenance.md).
 
 ### Skills currently included
 
