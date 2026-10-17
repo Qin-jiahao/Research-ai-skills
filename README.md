@@ -1,32 +1,42 @@
-# Research AI Skills
+# Research AI Skills / 科研 AI Skills
+
+面向科研工作的双语 AI Skills 与 Prompts 资源库<br>
+Bilingual AI Skills and Prompts for research work
+
+[中文](#中文) · [English](#english) · [Skills](skills/README.md) · [Prompts](prompts/README.md) · [安装说明](docs/installation.md) · [贡献指南](CONTRIBUTING.md) · [许可证说明](docs/license-and-attribution.md)
 
 ## 中文
 
-`Research-ai-skills` 是一个面向科研工作的 AI Skills 与 Prompt 集合，覆盖论文写作、文献分析、统计分析、科研绘图、转录组分析、科研代码和科研汇报。
+`Research-ai-skills` 提供可复用的 Markdown 工作流规范和任务级 Prompt，帮助研究生和科研人员拆解、规划和检查常见科研任务。当前内容覆盖论文写作、文献分析、统计方法、科研图表、bulk RNA-seq、科研代码、科研汇报、科研计划和开源项目复用审查。
 
-项目地址：[github.com/Qin-jiahao/Research-ai-skills](https://github.com/Qin-jiahao/Research-ai-skills)
+Skill 适合多步骤任务，通常包含输入要求、工作流程、输出格式和质量检查。Prompt 适合单个任务或短流程。使用前请阅读对应文件的适用场景、边界、必需输入和局限性。
 
-已发布内容会在发布前经过整理、改写和检查。当前未发布的工作区改动仍需完成来源核验和行为评估。网络截图和其他公开材料只作为参考来源，不直接作为最终内容发布。
+本仓库不提供真实研究数据、科研结论，也不声称分析软件已经在所有环境中验证。模型输出需要结合原始数据、全文文献和研究设计核对。信息不足时，应先列出缺失项和待核验内容，不应补写数据、文献、统计结果、实验结论或运行结果。
 
-### 项目结构
+### 快速入口
 
-```text
-Research-ai-skills/
-├── skills/       # 复杂的、多步骤科研工作流
-├── prompts/      # 单个任务或短流程提示词
-├── tools/        # 工具目录规范；外部项目索引在 docs/ 和 catalog/
-├── catalog/      # 候选资源和核验状态
-├── docs/         # 设计原则、兼容性和限制说明
-└── tests/        # Skill 和 Prompt 的检查清单
-```
+- [Skills 索引](skills/README.md)：多步骤科研工作流。
+- [Prompts 索引](prompts/README.md)：单任务和短流程提示词。
+- [安装与使用](docs/installation.md)：复制本地 Skill，并说明不同客户端的目录差异。
+- [资源状态](docs/resource-status.md)：解释 `collected`、`reviewed`、`tested`、`released` 和 `draft`。
+- [来源与归因](docs/sources-and-attribution.md)：说明原创内容、已知来源内容和来源不明材料的处理方式。
+- [外部项目记录](docs/external-projects.md)：记录项目链接、作者、许可证和仍待核验的信息。
+- [兼容性与限制](docs/compatibility.md)：说明客户端差异和当前使用边界。
+- [机器可读资源目录](catalog/resources.json)：查看本地资源的结构化记录；外部项目索引见 [resources.tsv](catalog/resources.tsv)。
+- [截图整理台账](docs/screenshot-intake-2026-10.md)：查看逐张整理结果和待核验项。
+- [许可证与署名说明](docs/license-and-attribution.md)：说明 MIT License 的适用范围和第三方材料边界。
 
-Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`prompts/README.md`](prompts/README.md)。兼容性说明见 [`docs/compatibility.md`](docs/compatibility.md)。工具目录见 [`tools/README.md`](tools/README.md)，资源状态和维护规则见 [`docs/maintenance.md`](docs/maintenance.md)。
+### 状态和使用边界
 
-截图逐张整理见 [`docs/screenshot-intake-2026-10.md`](docs/screenshot-intake-2026-10.md)，外部项目来源和许可证核验记录见 [`docs/external-projects.md`](docs/external-projects.md)。
+| 标记 | 含义 | 不代表 |
+| --- | --- | --- |
+| Skill `draft` | 内容成熟度仍有限，行为测试或真实数据测试尚不充分 | 不代表内容已经过科研验证 |
+| Catalog `collected` | 已记录为资源线索 | 不代表可以安装或复用 |
+| Catalog `reviewed` | 已完成记录范围内的结构、来源或边界检查 | 不代表运行结果正确 |
+| Catalog `tested` | 已按记录的案例完成检查 | 不代表科研结论正确 |
+| Catalog `released` | 文件已纳入当前仓库版本 | 不代表科学有效、法律审查完成或所有客户端都能自动调用 |
 
 ### 当前收录的 Skills
-
-当前收录以下 Skills。Skill 文件中的 `draft` 表示内容成熟度仍需通过更多行为或真实数据测试；资源目录中的 `released` 表示内容已经纳入本仓库版本。`released` 不等于科研结论已经验证，也不等于所有客户端都能自动调用。
 
 - `academic-writing`：论文段落和章节写作
 - `paper-review`：论文结构、方法和论证检查
@@ -44,57 +54,73 @@ Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`pr
 - `academic-language-polish`：保留科学含义的学术语言润色
 - `scientific-interface-design`：科研软件界面和交互设计
 
-后续内容会根据实际测试和使用反馈继续扩展。
+### 本地使用
 
-### 安装与使用
+先阅读目标 Skill 的 `SKILL.md`，再根据目标客户端官方文档确认支持的 `skills/` 路径。仓库提供的脚本只复制一个本地 Skill，不会自动探测客户端路径，也不会安装插件或 Marketplace 包：
 
-安装说明见 [`docs/installation.md`](docs/installation.md)。正式发布和草稿状态见 [`docs/resource-status.md`](docs/resource-status.md)。
+```bash
+git clone https://github.com/Qin-jiahao/Research-ai-skills.git
+cd Research-ai-skills
 
-### 使用原则
+python3 scripts/install_skill.py skills/research-planning \
+  --destination /path/to/supported/skills --dry-run
+python3 scripts/install_skill.py skills/research-planning \
+  --destination /path/to/supported/skills
+```
 
-- 使用前应提供足够的研究背景、数据说明和任务目标。
-- 模型不得凭空生成数据、文献、统计结果或实验结论。
-- 输入信息不足时，Skill 应先指出缺失信息和可能影响。
-- 科研分析结果需要由研究者结合原始数据和方法学判断进行核验。
-- 每个 Skill 都应说明适用场景、输入要求、输出格式和限制。
+`--force` 只应在比较过目标目录后使用。脚本会拒绝源目录本身和源目录内部的目标路径。Prompt 可以直接阅读 Markdown 文件，再根据具体任务补充输入。
 
-### 许可证与来源
-
-本仓库中的原创内容将使用仓库根目录声明的许可证。已知来源的材料会保留原作者、原项目和许可证信息。来源不明确的材料只作为参考，并标注“来源于网络，自行整理汇总”，不会直接复制原文。
-
-### 资源目录与验证
-
-完整的机器可读 R01–R31 资源目录见 [`catalog/resources.json`](catalog/resources.json)，目录说明见 [`catalog/README.md`](catalog/README.md)。覆盖范围和检查边界见 [`tests/resource-coverage.md`](tests/resource-coverage.md)。外部项目的独立索引见 [`catalog/resources.tsv`](catalog/resources.tsv)，它不替代 JSON 目录。
-
-本地安装脚本是 `scripts/install_skill.py`。脚本只复制一个本地 Skill，默认不会覆盖同名目录；使用 `--force` 前应确认目标路径不会包含源目录。
-
-## English
-
-`Research-ai-skills` is a collection of AI Skills and Prompts for research work. It covers academic writing, literature analysis, statistics, research figures, transcriptomics, research code, and scientific presentations.
-
-Project repository: [github.com/Qin-jiahao/Research-ai-skills](https://github.com/Qin-jiahao/Research-ai-skills)
-
-Published materials are reorganized, rewritten, and checked before release. Unreleased working-tree changes still require provenance review and behavioral evaluation. Screenshots and other public materials are treated as references only and are not copied directly as final content.
-
-### Repository structure
+### 目录结构
 
 ```text
 Research-ai-skills/
-├── skills/       # Complex, multi-step research workflows
-├── prompts/      # Prompts for single tasks or short workflows
-├── tools/        # Tool-recording guidance; external projects are indexed in docs/ and catalog/
-├── catalog/      # Candidate resources and verification status
-├── docs/         # Design principles, compatibility, and limitations
-└── tests/        # Checklists for evaluating Skills and Prompts
+├── skills/       # 多步骤科研工作流；每个目录含双语 SKILL.md
+├── prompts/      # 单任务或短流程 Prompt
+├── catalog/      # 本地资源和外部项目索引、状态记录
+├── docs/         # 安装、兼容性、限制、来源和维护说明
+├── tests/        # 静态检查和评估边界
+├── scripts/      # 本地安装和仓库校验脚本
+└── tools/        # 外部工具记录规范
 ```
 
-See [`skills/README.md`](skills/README.md) for the Skill index, [`prompts/README.md`](prompts/README.md) for the Prompt index, [`tools/README.md`](tools/README.md) for tool notes, and [`docs/compatibility.md`](docs/compatibility.md) for platform notes. Maintenance rules are in [`docs/maintenance.md`](docs/maintenance.md).
+### 来源、许可证和贡献
 
-The image-by-image intake ledger is [`docs/screenshot-intake-2026-10.md`](docs/screenshot-intake-2026-10.md). External project sources and license verification notes are in [`docs/external-projects.md`](docs/external-projects.md).
+仓库根目录的 [MIT License](LICENSE) 只适用于维护者拥有版权的原创内容。已知来源的材料会保留原作者、原项目链接和原始许可证。来源无法可靠确认的内容只作为参考，标记为“来源于网络，自行整理汇总”，不复制原文。截图只用于记录线索，仓库不上传原始截图；外部项目的许可证标签仍需在复用前对照上游仓库和目标版本核验。
+
+请参阅 [贡献指南](CONTRIBUTING.md) 和 [维护规则](docs/maintenance.md)。
+
+## English
+
+`Research-ai-skills` provides reusable Markdown workflow specifications and task-level Prompts for graduate students and researchers. The current scope covers academic writing, literature analysis, statistical methods, research figures, bulk RNA-seq, research code, scientific presentations, research planning, and open-source reuse review.
+
+A Skill is intended for a multi-step task and normally documents inputs, workflow, output format, and quality checks. A Prompt is intended for one task or a short workflow. Read the relevant use case, boundaries, required inputs, and limitations before using either one.
+
+This repository does not provide real research data or scientific conclusions, and it does not claim that the analysis software has been validated in every environment. Check generated output against the original data, full-text sources, and study design. When information is missing, list the missing and unverified items instead of inventing data, references, statistical results, experimental conclusions, or execution results.
+
+### Quick links
+
+- [Skills index](skills/README.md): multi-step research workflows.
+- [Prompts index](prompts/README.md): prompts for individual tasks and short workflows.
+- [Installation and use](docs/installation.md): local Skill copying and client-specific directory notes.
+- [Resource status](docs/resource-status.md): meanings of `collected`, `reviewed`, `tested`, `released`, and `draft`.
+- [Sources and attribution](docs/sources-and-attribution.md): treatment of original, known-source, and unclear-provenance material.
+- [External project records](docs/external-projects.md): project links, authors, licenses, and unresolved checks.
+- [Compatibility and limitations](docs/compatibility.md): client differences and current usage boundaries.
+- [Machine-readable resource catalog](catalog/resources.json): structured local-resource records; external projects are indexed in [resources.tsv](catalog/resources.tsv).
+- [Screenshot intake ledger](docs/screenshot-intake-2026-10.md): image-by-image notes and unresolved items.
+- [License and attribution scope](docs/license-and-attribution.md): MIT License coverage and third-party material boundaries.
+
+### Status and boundaries
+
+| Label | Meaning | Does not certify |
+| --- | --- | --- |
+| Skill `draft` | Content maturity is limited; behavioral or real-data testing remains incomplete | Scientific validation |
+| Catalog `collected` | A resource lead has been recorded | Installability or permission to reuse |
+| Catalog `reviewed` | The recorded scope, provenance, or boundaries have been checked | Correct execution results |
+| Catalog `tested` | The recorded case has been checked | Correct scientific conclusions |
+| Catalog `released` | The file is included in the current repository version | Scientific validity, completed legal review, or automatic discovery in every client |
 
 ### Skills currently included
-
-The repository currently includes the following Skills. A `draft` label inside a Skill describes content maturity and pending behavioral or real-data testing. A `released` label in the catalog means that the content is included in this repository version. `released` does not certify scientific validity or automatic discovery in every client.
 
 - `academic-writing`: writing research paragraphs and sections
 - `paper-review`: checking structure, methods, and reasoning
@@ -112,26 +138,37 @@ The repository currently includes the following Skills. A `draft` label inside a
 - `academic-language-polish`: academic language polishing with meaning preservation
 - `scientific-interface-design`: research-software interface and interaction planning
 
-Future additions will follow actual testing and usage feedback.
+### Use a local Skill
 
-### Installation and use
+Read the target `SKILL.md` first. Confirm a supported `skills/` directory in the target client’s official documentation. The included script copies one local Skill; it does not discover client paths or install plugins or Marketplace packages:
 
-See [`docs/installation.md`](docs/installation.md) for installation instructions and [`docs/resource-status.md`](docs/resource-status.md) for release status.
+```bash
+git clone https://github.com/Qin-jiahao/Research-ai-skills.git
+cd Research-ai-skills
 
-### Usage principles
+python3 scripts/install_skill.py skills/research-planning \
+  --destination /path/to/supported/skills --dry-run
+python3 scripts/install_skill.py skills/research-planning \
+  --destination /path/to/supported/skills
+```
 
-- Provide sufficient research context, data description, and task objectives.
-- Do not fabricate data, references, statistical results, or experimental conclusions.
-- When required information is missing, identify the missing information and its possible impact first.
-- Researchers must verify analytical results against the original data and methods.
-- Every Skill should document its use cases, required inputs, output format, and limitations.
+Use `--force` only after reviewing the destination. The script rejects the source directory itself and destinations inside the source directory. Prompts can be read as Markdown files and filled with task-specific inputs.
 
-### License and attribution
+### Repository structure
 
-Original content in this repository will be released under the license declared at the repository root. Materials with known sources will retain the original author, project, and license information. Materials with unclear provenance will be marked as “Source: online materials, independently organized and summarized” and will not be copied verbatim.
+```text
+Research-ai-skills/
+├── skills/       # Multi-step research workflows; each directory contains a bilingual SKILL.md
+├── prompts/      # Prompts for individual tasks or short workflows
+├── catalog/      # Local-resource and external-project indexes and status records
+├── docs/         # Installation, compatibility, limitations, provenance, and maintenance notes
+├── tests/        # Static checks and evaluation boundaries
+├── scripts/      # Local installer and repository validator
+└── tools/        # External-tool recording guidance
+```
 
-## Resource catalog
+### Sources, license, and contribution
 
-The machine-readable R01–R31 inventory is in [`catalog/resources.json`](catalog/resources.json), with bilingual definitions in [`catalog/README.md`](catalog/README.md). Coverage and test boundaries are documented in [`tests/resource-coverage.md`](tests/resource-coverage.md). The separate [`catalog/resources.tsv`](catalog/resources.tsv) file indexes external projects and does not replace the JSON inventory.
+The root [MIT License](LICENSE) applies only to original content whose copyright is held by the maintainers. Materials with known sources retain the original author, project link, and upstream license. Material with unclear provenance is used only as a reference, marked as “Source: online materials, independently organized and summarized,” and not copied verbatim. Screenshots are used only as leads; the original screenshots are not included in this repository. License labels for external projects must still be checked against the upstream repository and target version before reuse.
 
-The local installer is `scripts/install_skill.py`. It copies one local Skill to a user-selected destination, refuses to overwrite an existing directory unless `--force` is provided, and rejects a destination that would delete or contain the source directory.
+See the [contribution guide](CONTRIBUTING.md) and [maintenance rules](docs/maintenance.md).
