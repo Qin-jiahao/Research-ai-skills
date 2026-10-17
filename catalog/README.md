@@ -12,9 +12,9 @@ The image-by-image evidence ledger is [`../docs/screenshot-intake-2026-10.md`](.
 
 逐张截图的证据台账见 [`../docs/screenshot-intake-2026-10.md`](../docs/screenshot-intake-2026-10.md)。外部项目链接、作者归属、许可证说明和未解决的来源问题见 [`../docs/external-projects.md`](../docs/external-projects.md)。
 
-Status values are `collected`, `reviewed`, `tested`, and `released`. A collected external project is not an installable Skill in this repository. URLs and licenses must be checked against the upstream repository before claiming compatibility.
+Status values are `collected`, `reviewed`, `tested`, and `released`. `collected` means that a source or topic has been recorded, but repository behavior testing is incomplete. `reviewed` means that the recorded public source, purpose, and license information have been checked. `tested` means that static or local testing has been completed in this repository. A collected external project is not an installable Skill in this repository. URLs and licenses must be checked against the upstream repository before claiming compatibility.
 
-状态包括 `collected`、`reviewed`、`tested` 和 `released`。标记为 collected 的外部项目不是本仓库可安装的 Skill。只有核对上游仓库后，才能说明兼容性或许可证。
+状态包括 `collected`、`reviewed`、`tested` 和 `released`。`collected` 表示已记录来源或主题，但尚未完成本仓库行为测试；`reviewed` 表示已核对记录的公开来源、用途和许可证信息；`tested` 表示已在本仓库的静态或本地测试中验证。标记为 collected 的外部项目不是本仓库可安装的 Skill。只有核对上游仓库后，才能说明兼容性或许可证。
 
 The catalog records evidence status, not scientific validity. A screenshot, repository README, or badge cannot substitute for a real-data test, a reproducible run, or a license review.
 

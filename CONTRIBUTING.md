@@ -1,4 +1,4 @@
-# Contributing / 参与贡献
+# Contributing / 贡献指南
 
 ## 中文
 
@@ -27,7 +27,7 @@
 
 请勿提交未授权的第三方原文、个人信息、API 密钥、未公开研究数据、受限数据或其他不应公开的材料。提交者需要自行确认拥有提交所需的权利，并在文件级说明中保留第三方归因和许可证要求。
 
-根目录的 [MIT License](LICENSE) 只适用于维护者拥有相应权利的原创内容。第三方文本、图片、代码、名称和外部项目仍受其原始许可证约束，详细范围见[许可证与署名说明](docs/license-and-attribution.md)。
+根目录的 [MIT License](LICENSE) 适用于维护者创作，或贡献者明确按 MIT 提交且本仓库有权分发的原创内容。提交者需要确认自己有权按 MIT 分发所提交的内容。第三方文本、图片、代码、名称和外部项目仍受其原始许可证约束，详细范围见[许可证与署名说明](docs/license-and-attribution.md)。
 
 ### 提交前检查
 
@@ -59,7 +59,7 @@ git diff --check
 
 ### 状态标签
 
-Skill 文件中的 `draft` 表示内容成熟度和行为测试仍有限。资源目录中的 `collected`、`reviewed`、`tested` 和 `released` 只按记录的证据推进；`released` 表示文件已纳入仓库版本，不代表科学结论、法律审查或所有客户端行为已经验证。状态定义见[资源状态](docs/resource-status.md)。
+Skill 文件中的 `draft` 表示内容成熟度和行为测试仍有限。资源目录中的 `collected`、`reviewed`、`tested` 和 `released` 只按记录的证据推进；`reviewed` 表示已核对记录的公开来源、用途和许可证信息，`tested` 表示已在本仓库的静态或本地测试中验证，`released` 表示已作为本仓库内容发布。这些状态不代表科学结论、法律审查或所有客户端行为已经验证。状态定义见[资源状态](docs/resource-status.md)。
 
 ## English
 
@@ -88,7 +88,7 @@ For new or adapted external material, record the original URL, author or maintai
 
 Do not submit unauthorized third-party text, personal information, API keys, unpublished research data, restricted data, or other material that should not be public. Contributors must confirm that they have the rights needed for the submission and retain third-party attribution and license requirements in file-level notes.
 
-The root [MIT License](LICENSE) applies only to original content for which the maintainers hold the relevant rights. Third-party text, images, code, names, and external projects remain subject to their original licenses. See the [license and attribution scope](docs/license-and-attribution.md) for details.
+The root [MIT License](LICENSE) applies to original content created by the maintainers, or explicitly submitted under MIT by contributors when this repository has the right to distribute it. Contributors must confirm that they have the right to distribute their submission under MIT. Third-party text, images, code, names, and external projects remain subject to their original licenses. See the [license and attribution scope](docs/license-and-attribution.md) for details.
 
 ### Before opening a pull request
 
@@ -120,4 +120,4 @@ You may use `feat:`, `fix:`, or `docs:` prefixes in commit messages, but they ar
 
 ### Status labels
 
-The `draft` label inside a Skill describes limited content maturity and behavioral testing. The catalog labels `collected`, `reviewed`, `tested`, and `released` should advance only when the recorded evidence supports them. `released` means that the file is included in a repository version; it does not certify scientific conclusions, legal review, or behavior in every client. See [resource status](docs/resource-status.md) for definitions.
+The `draft` label inside a Skill describes limited content maturity and behavioral testing. The catalog labels `collected`, `reviewed`, `tested`, and `released` should advance only when the recorded evidence supports them. `reviewed` means that the recorded public source, purpose, and license information have been checked. `tested` means that static or local testing has been completed in this repository. `released` means that the item has been published as repository content. These labels do not certify scientific conclusions, legal review, or behavior in every client. See [resource status](docs/resource-status.md) for definitions.

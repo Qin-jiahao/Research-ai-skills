@@ -31,10 +31,10 @@ Skill 适合多步骤任务，通常包含输入要求、工作流程、输出�
 | 标记 | 含义 | 不代表 |
 | --- | --- | --- |
 | Skill `draft` | 内容成熟度仍有限，行为测试或真实数据测试尚不充分 | 不代表内容已经过科研验证 |
-| Catalog `collected` | 已记录为资源线索 | 不代表可以安装或复用 |
-| Catalog `reviewed` | 已完成记录范围内的结构、来源或边界检查 | 不代表运行结果正确 |
-| Catalog `tested` | 已按记录的案例完成检查 | 不代表科研结论正确 |
-| Catalog `released` | 文件已纳入当前仓库版本 | 不代表科学有效、法律审查完成或所有客户端都能自动调用 |
+| Catalog `collected` | 已记录来源或主题，但尚未完成本仓库行为测试 | 不代表可以安装或复用 |
+| Catalog `reviewed` | 已核对记录的公开来源、用途和许可证信息 | 不代表运行结果正确 |
+| Catalog `tested` | 已在本仓库的静态或本地测试中验证 | 不代表科研结论正确 |
+| Catalog `released` | 已作为本仓库内容发布 | 不代表科学有效、法律审查完成或所有客户端都能自动调用 |
 
 ### 当前收录的 Skills
 
@@ -85,7 +85,7 @@ Research-ai-skills/
 
 ### 来源、许可证和贡献
 
-仓库根目录的 [MIT License](LICENSE) 只适用于维护者拥有版权的原创内容。已知来源的材料会保留原作者、原项目链接和原始许可证。来源无法可靠确认的内容只作为参考，标记为“来源于网络，自行整理汇总”，不复制原文。截图只用于记录线索，仓库不上传原始截图；外部项目的许可证标签仍需在复用前对照上游仓库和目标版本核验。
+仓库根目录的 [MIT License](LICENSE) 适用于维护者创作，或贡献者明确按 MIT 提交且本仓库有权分发的原创内容。已知来源的材料会保留原作者、原项目链接和原始许可证。来源无法可靠确认的内容只作为参考，标记为“来源于网络，自行整理汇总”，不复制原文。截图只用于记录线索，仓库不上传原始截图；外部项目的许可证标签仍需在复用前对照上游仓库和目标版本核验。
 
 请参阅 [贡献指南](CONTRIBUTING.md) 和 [维护规则](docs/maintenance.md)。
 
@@ -115,10 +115,10 @@ This repository does not provide real research data or scientific conclusions, a
 | Label | Meaning | Does not certify |
 | --- | --- | --- |
 | Skill `draft` | Content maturity is limited; behavioral or real-data testing remains incomplete | Scientific validation |
-| Catalog `collected` | A resource lead has been recorded | Installability or permission to reuse |
-| Catalog `reviewed` | The recorded scope, provenance, or boundaries have been checked | Correct execution results |
-| Catalog `tested` | The recorded case has been checked | Correct scientific conclusions |
-| Catalog `released` | The file is included in the current repository version | Scientific validity, completed legal review, or automatic discovery in every client |
+| Catalog `collected` | A source or topic has been recorded, but repository behavior testing is incomplete | Installability or permission to reuse |
+| Catalog `reviewed` | The recorded public source, purpose, and license information have been checked | Correct execution results |
+| Catalog `tested` | Static or local testing has been completed in this repository | Correct scientific conclusions |
+| Catalog `released` | The item has been published as repository content | Scientific validity, completed legal review, or automatic discovery in every client |
 
 ### Skills currently included
 
@@ -169,6 +169,6 @@ Research-ai-skills/
 
 ### Sources, license, and contribution
 
-The root [MIT License](LICENSE) applies only to original content whose copyright is held by the maintainers. Materials with known sources retain the original author, project link, and upstream license. Material with unclear provenance is used only as a reference, marked as “Source: online materials, independently organized and summarized,” and not copied verbatim. Screenshots are used only as leads; the original screenshots are not included in this repository. License labels for external projects must still be checked against the upstream repository and target version before reuse.
+The root [MIT License](LICENSE) applies to original content created by the maintainers, or explicitly submitted under MIT by contributors when this repository has the right to distribute it. Materials with known sources retain the original author, project link, and upstream license. Material with unclear provenance is used only as a reference, marked as “Source: online materials, independently organized and summarized,” and not copied verbatim. Screenshots are used only as leads; the original screenshots are not included in this repository. License labels for external projects must still be checked against the upstream repository and target version before reuse.
 
 See the [contribution guide](CONTRIBUTING.md) and [maintenance rules](docs/maintenance.md).
