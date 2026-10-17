@@ -27,7 +27,7 @@
 
 请勿提交未授权的第三方原文、个人信息、API 密钥、未公开研究数据、受限数据或其他不应公开的材料。提交者需要自行确认拥有提交所需的权利，并在文件级说明中保留第三方归因和许可证要求。
 
-根目录的 [MIT License](LICENSE) 适用于维护者创作，或贡献者明确按 MIT 提交且本仓库有权分发的原创内容。提交者需要确认自己有权按 MIT 分发所提交的内容。第三方文本、图片、代码、名称和外部项目仍受其原始许可证约束，详细范围见[许可证与署名说明](docs/license-and-attribution.md)。
+根目录的 [MIT License](LICENSE) 适用于维护者创作的原创内容，也适用于贡献者明确按 MIT 提交、且本仓库有权分发的原创内容。提交者需要确认自己有权按 MIT 分发所提交的内容。第三方文本、图片、代码、名称和外部项目仍受其原始许可证约束，详细范围见[许可证与署名说明](docs/license-and-attribution.md)。
 
 ### 提交前检查
 
@@ -88,7 +88,7 @@ For new or adapted external material, record the original URL, author or maintai
 
 Do not submit unauthorized third-party text, personal information, API keys, unpublished research data, restricted data, or other material that should not be public. Contributors must confirm that they have the rights needed for the submission and retain third-party attribution and license requirements in file-level notes.
 
-The root [MIT License](LICENSE) applies to original content created by the maintainers, or explicitly submitted under MIT by contributors when this repository has the right to distribute it. Contributors must confirm that they have the right to distribute their submission under MIT. Third-party text, images, code, names, and external projects remain subject to their original licenses. See the [license and attribution scope](docs/license-and-attribution.md) for details.
+The root [MIT License](LICENSE) applies to original content created by the maintainers. It also applies to original content explicitly submitted under MIT by contributors when this repository has the right to distribute it. Contributors must confirm that they have the right to distribute their submission under MIT. Third-party text, images, code, names, and external projects remain subject to their original licenses. See the [license and attribution scope](docs/license-and-attribution.md) for details.
 
 ### Before opening a pull request
 
