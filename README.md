@@ -14,7 +14,7 @@
 Research-ai-skills/
 ├── skills/       # 复杂的、多步骤科研工作流
 ├── prompts/      # 单个任务或短流程提示词
-├── tools/        # 独立科研工具和开源项目说明
+├── tools/        # 工具目录规范；外部项目索引在 docs/ 和 catalog/
 ├── catalog/      # 候选资源和核验状态
 ├── docs/         # 设计原则、兼容性和限制说明
 └── tests/        # Skill 和 Prompt 的检查清单
@@ -26,7 +26,7 @@ Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`pr
 
 ### 当前收录的 Skills
 
-当前收录以下 Skills。各文件和变更日志中的状态用于区分已发布内容与未发布草稿。
+当前收录以下 Skills。Skill 文件中的 `draft` 表示内容成熟度仍需通过更多行为或真实数据测试；资源目录中的 `released` 表示内容已经纳入本仓库版本。`released` 不等于科研结论已经验证，也不等于所有客户端都能自动调用。
 
 - `academic-writing`：论文段落和章节写作
 - `paper-review`：论文结构、方法和论证检查
@@ -62,6 +62,12 @@ Skills 索引见 [`skills/README.md`](skills/README.md)，Prompts 索引见 [`pr
 
 本仓库中的原创内容将使用仓库根目录声明的许可证。已知来源的材料会保留原作者、原项目和许可证信息。来源不明确的材料只作为参考，并标注“来源于网络，自行整理汇总”，不会直接复制原文。
 
+### 资源目录与验证
+
+完整的机器可读 R01–R31 资源目录见 [`catalog/resources.json`](catalog/resources.json)，目录说明见 [`catalog/README.md`](catalog/README.md)。覆盖范围和检查边界见 [`tests/resource-coverage.md`](tests/resource-coverage.md)。外部项目的独立索引见 [`catalog/resources.tsv`](catalog/resources.tsv)，它不替代 JSON 目录。
+
+本地安装脚本是 `scripts/install_skill.py`。脚本只复制一个本地 Skill，默认不会覆盖同名目录；使用 `--force` 前应确认目标路径不会包含源目录。
+
 ## English
 
 `Research-ai-skills` is a collection of AI Skills and Prompts for research work. It covers academic writing, literature analysis, statistics, research figures, transcriptomics, research code, and scientific presentations.
@@ -76,7 +82,7 @@ Published materials are reorganized, rewritten, and checked before release. Unre
 Research-ai-skills/
 ├── skills/       # Complex, multi-step research workflows
 ├── prompts/      # Prompts for single tasks or short workflows
-├── tools/        # Independent research tools and project notes
+├── tools/        # Tool-recording guidance; external projects are indexed in docs/ and catalog/
 ├── catalog/      # Candidate resources and verification status
 ├── docs/         # Design principles, compatibility, and limitations
 └── tests/        # Checklists for evaluating Skills and Prompts
@@ -88,7 +94,7 @@ The image-by-image intake ledger is [`docs/screenshot-intake-2026-10.md`](docs/s
 
 ### Skills currently included
 
-The repository currently includes the following Skills. Each file and the changelog records whether content is released or still under evaluation.
+The repository currently includes the following Skills. A `draft` label inside a Skill describes content maturity and pending behavioral or real-data testing. A `released` label in the catalog means that the content is included in this repository version. `released` does not certify scientific validity or automatic discovery in every client.
 
 - `academic-writing`: writing research paragraphs and sections
 - `paper-review`: checking structure, methods, and reasoning
@@ -126,6 +132,6 @@ Original content in this repository will be released under the license declared 
 
 ## Resource catalog
 
-The complete bilingual R01–R31 inventory is in [`catalog/resources.json`](catalog/resources.json), with definitions in [`catalog/README.md`](catalog/README.md). Coverage and test boundaries are documented in [`tests/resource-coverage.md`](tests/resource-coverage.md).
+The machine-readable R01–R31 inventory is in [`catalog/resources.json`](catalog/resources.json), with bilingual definitions in [`catalog/README.md`](catalog/README.md). Coverage and test boundaries are documented in [`tests/resource-coverage.md`](tests/resource-coverage.md). The separate [`catalog/resources.tsv`](catalog/resources.tsv) file indexes external projects and does not replace the JSON inventory.
 
-The local installer is `scripts/install_skill.py`. It copies one local Skill to a user-selected destination and refuses to overwrite an existing directory unless `--force` is provided.
+The local installer is `scripts/install_skill.py`. It copies one local Skill to a user-selected destination, refuses to overwrite an existing directory unless `--force` is provided, and rejects a destination that would delete or contain the source directory.

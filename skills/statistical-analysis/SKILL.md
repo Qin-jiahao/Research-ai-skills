@@ -5,7 +5,7 @@ description: Select and assess statistical methods when study design and data st
 
 # Statistical Analysis / 统计分析
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 

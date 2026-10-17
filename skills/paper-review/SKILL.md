@@ -5,7 +5,7 @@ description: Review manuscript structure, methods, evidence, and wording when ma
 
 # Paper Review / 论文审查
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 

@@ -5,7 +5,7 @@ description: Turn a research idea into a checkable plan with assumptions, eviden
 
 # Research Planning / 科研计划
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -58,4 +58,34 @@ Use it for topic scoping, study design, milestones, handoffs, and review checkpo
 
 ## English
 
-Use the workflow above with the same evidence boundaries. Mark missing inputs as “to be provided”; do not infer study design, data, results, or completion status.
+### Purpose and use
+
+Use this Skill for topic scoping, study design, milestones, handoffs, and review checkpoints. It turns a vague research idea into a checkable plan while separating supplied facts, assumptions, unresolved items, and unexecuted steps.
+
+### Boundaries and required inputs
+
+It does not establish that a hypothesis is true or replace statistical, ethics, data-permission, supervisor, or peer review. Provide the research question, study object and design, primary outcome or estimand, existing evidence, data and material sources, time and resource limits, deliverables, known risks, and the current handoff state. Mark missing inputs as “to be provided”; do not fill them with defaults.
+
+### Workflow and output
+
+1. Restate the question, unit of analysis, and evidence boundary.
+2. List assumptions, falsifiable hypotheses, alternative explanations, and risks.
+3. Break the work into milestones with inputs, outputs, dependencies, and acceptance criteria.
+4. Mark human-confirmation points and steps that cannot run in parallel.
+5. Return an information-completeness table, risk and assumption record, milestone table, verification plan, handoff record, executable steps, and blocked steps.
+
+### Quality checks and limitations
+
+Check whether the task is testable, each step has an input and output, the schedule depends on unconfirmed assumptions, conclusions exceed the evidence, and the handoff records state and blockers. Do not invent dates, results, references, sample sizes, or completion status. Plan quality depends on the supplied material and cannot establish feasibility or method correctness.
+
+### Complete-input example
+
+Input: a research question, sample source, prespecified contrast, primary outcome, data inventory, time limit, deliverable format, and ethics constraints. Expected output: milestones, verification points, and a risk record without any unprovided result.
+
+### Incomplete-input example
+
+Input: only “compare expression between two groups.” Expected handling: mark species, unit of analysis, biological replication, batch, raw-data type, contrast, and effect-size definition as “to be provided,” and pause method selection.
+
+### Source
+
+This Skill was independently organized from the supplied screenshots. Specific authors, URLs, and licenses were not reliably identifiable, and no screenshot text was copied.

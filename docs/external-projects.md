@@ -52,4 +52,8 @@ The screenshots also show `gh-fix-ci`, WorkBuddy, ELI5 cards, generic front-end 
 
 中文：本页依据用户提供的本地截图和公开项目页面整理。外部链接仅用于指向可能的原始来源；本仓库不把来源不明的截图内容包装成原创，也不把截图中的宣传语当作科研结果。
 
+表中的许可证状态表示公开仓库页面或元数据中的初步记录，不是逐文件的法律审查。本文没有固定上游提交号；复用前应重新打开仓库、许可证文件和目标版本，记录新的访问日期。
+
 English: This page was organized from the user's local screenshots and public project pages. External links point to possible original sources only. The repository does not present unclear screenshot material as original work or treat promotional claims as research results.
+
+License labels in the tables are preliminary records from public repository pages or metadata, not file-by-file legal review. No upstream commit was pinned here; before reuse, reopen the repository, license file, and target version and record a new access date.

@@ -5,7 +5,7 @@ description: Plan and review reproducible research-code workflows when code, dat
 
 # Research Coding / 科研代码
 
-**Status / 状态:** v0.2.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -186,6 +186,18 @@ Reproducibility depends on data permissions, data versions, environment records,
 当数据、环境或执行权限不可用时，输出应限于静态结构、风险和核查计划。任何“通过”“复现成功”或“结果一致”的表述都必须有可追溯的运行证据。
 
 When data, the environment, or execution access is unavailable, limit the output to static structure, risks, and a verification plan. Statements such as “passed,” “reproduced,” or “consistent results” require traceable execution evidence.
+
+## Complete-input example / 完整输入示例
+
+输入包含代码目录、输入输出契约、锁定的依赖文件、最小测试数据、运行命令、日志和一份可核对的结果记录。输出应指出已执行的检查、未执行的检查、阻断问题和最小修复方案。
+
+The input contains a code tree, input/output contract, locked dependencies, minimal test data, run commands, logs, and a checkable result record. The output should distinguish executed and unexecuted checks, blocking findings, and the smallest repair plan.
+
+## Incomplete-input example / 信息不足示例
+
+输入只有代码片段，没有数据契约、依赖版本或运行日志。输出应把这些字段列为待补充，只能做静态风险审查，不能声称代码已经运行或结果可复现。
+
+If the input is only a code fragment without a data contract, dependency versions, or an execution log, list those fields as missing and limit the output to static risks. Do not claim that the code ran or that results were reproduced.
 
 ## Source / 来源
 

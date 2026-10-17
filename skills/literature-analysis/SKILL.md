@@ -5,7 +5,7 @@ description: Plan verifiable literature searches and evidence extraction when a 
 
 # Literature Analysis / 文献分析
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 

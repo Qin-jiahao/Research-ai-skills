@@ -122,4 +122,28 @@ For every conclusion, state whether it is based on code reading, an existing exe
 
 来源于网络，自行整理汇总。
 
-Source: collected from public online materials and reorganized by the repository maintainer.
+## Prompt contract / 提示词契约
+
+### 中文
+
+- **使用场景：** 审查科研代码的输入输出契约、环境、数据安全、错误处理和结果核验。
+- **输入要求：** 代码树、研究任务、数据和文件位置、依赖版本、运行命令、测试样例和已有日志。
+- **输出要求：** 范围与状态、输入输出契约、环境来源、隐私检查、测试计划、日志建议、分级问题和下一步。
+- **禁止编造：** 不得编造运行结果、通过记录、版本号、性能、统计结果或科学结论。
+- **信息不足：** 把缺少的代码、数据契约、依赖或日志列为待补充，只做静态审查和核验计划。
+- **双语示例：** 完整输入含代码目录、锁定依赖和测试日志，输出可追溯问题表；信息不足时只有片段，输出缺失字段，不声称已复现。
+
+### English
+
+- **Use case:** Review research-code contracts, environment, data safety, failure handling, and result verification.
+- **Required inputs:** Code tree, research task, data and file locations, dependency versions, run commands, test cases, and existing logs.
+- **Expected output:** Scope and status, input/output contract, provenance, privacy review, test plan, logging advice, severity-ranked findings, and next actions.
+- **Fabrication ban:** Do not invent execution results, pass records, versions, performance, statistics, or scientific conclusions.
+- **Missing information:** Mark missing code, data contracts, dependencies, or logs as to be provided and limit the review to static checks and a verification plan.
+- **Bilingual example:** With a code tree, locked dependencies, and test logs, return a traceable findings table; with only a snippet, list missing fields and do not claim reproduction.
+
+## Source / 来源
+
+来源于网络和用户提供的科研代码审查材料，自行整理汇总；未复制第三方代码或审查报告。
+
+Source: online materials and user-provided research-code review material, independently organized. No third-party code or review report was copied.

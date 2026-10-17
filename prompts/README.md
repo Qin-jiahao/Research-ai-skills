@@ -2,11 +2,11 @@
 
 ## 中文
 
-这里存放经过整理的单任务提示词。测试状态和评估记录见 [`tests/`](../tests/)；未标记为已评估的内容仍属于草稿。每个提示词应说明使用场景、输入要求、输出要求、限制和信息不足时的处理方式。
+这里存放经过整理的单任务提示词。测试状态和评估记录见 [`tests/`](../tests/)。目录中的 `released` 只表示文件已纳入仓库版本，不表示提示词已经通过真实数据或所有客户端的行为测试。每个提示词都应说明使用场景、输入要求、输出要求、禁止编造的内容、信息不足时的处理方式、双语示例和来源。
 
 ## English
 
-This directory contains organized prompts for individual tasks. Test status and evaluation records are kept under [`tests/`](../tests/); unmarked items remain drafts. Each prompt should document its use case, required inputs, expected outputs, limitations, and handling of missing information.
+This directory contains organized prompts for individual tasks. Test status and evaluation records are kept under [`tests/`](../tests/). A `released` catalog entry means that a file is included in the repository version; it does not mean that the Prompt has been tested on real data or in every client. Each Prompt should document its use case, required inputs, expected outputs, fabrication limits, missing-information handling, a bilingual example, and provenance.
 
 ## Available prompts / 可用 Prompt
 

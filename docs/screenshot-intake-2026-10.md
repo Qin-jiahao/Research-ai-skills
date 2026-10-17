@@ -48,6 +48,44 @@ This ledger records the 35 images collected in `/Users/qinjiahao/Desktop/收集/
 
 The table above is the bilingual intake record. Names, URLs, licenses, versions, star counts, installation counts, and performance claims require verification on an official page before they are stated as facts. No screenshot is included in the repository.
 
+| Image file | Theme / category | Repository handling | Evidence status |
+| --- | --- | --- | --- |
+| `Camera_XHS_1731764723916.jpg` | Emotional rewriting, logic improvement, and feedback-driven editing / Prompt lead | Merged into `academic-language-polish` with fact and authorship preservation | Readable screenshot; author and license unverified |
+| `9e9ba6492200ac187d3bdf3df980017b.jpg` | Anatomy interactive 3D project / external project | Indexed only; no interface or code copied | Repository name visible; official page needs separate review |
+| `a42297b5486133b4c61a8e6cd7e4d869.jpg` | Deeper-question self-check / Prompt lead | Merged into premise and question checks in `research-planning` | Readable screenshot; source unclear |
+| `Screenshot_20260307_125943_com_xingin_xhs_NoteDe.jpg` | Claude Scientific Skills and K-Dense scientific-agent collection / external project | Official repository recorded; no Skill files copied | Official lead found; version and license pending |
+| `Screenshot_20260315_014636_com_xingin_xhs_NoteDe.jpg` | Research Paper Writing Skills / external writing lead | Master-cai adaptation and Peng Sida source recorded separately | Relationship visible; licenses require separate review |
+| `Screenshot_20260324_195741_com_xingin_xhs_NoteDe.jpg` | BioClaw, single-cell annotation, and omicskills / external project | BioClaw and skills-hub leads recorded; no reproduction claim | Project leads found; data, permissions, and licenses pending |
+| `Screenshot_20260324_233203_com_tencent_mm_TmplWe.jpg` | Skills as a layer between user tasks and tools; bioSkills / design lead | Merged into Skill boundary notes; bioSkills indexed | Public page accessible; archived state needs recheck before reuse |
+| `Screenshot_20260324_234741_com_xingin_xhs_NoteDe.jpg` | Strict paper review, Claude Code, and agent teams / Prompt lead | Merged into `paper-review` and `multi-agent-review` | Screenshot readable; comments are not methodological evidence |
+| `Screenshot_20260326_032902_com_ss_android_ugc_aw.jpg` | Multiple models for biomedical figures / Prompt lead | Rewritten as data-first, editable, evidence-aware figure workflow | Workflow visible; no data or result supplied |
+| `Screenshot_20260326_032905_com_ss_android_ugc_aw.jpg` | Agent-assisted introduction and mini-review / Prompt lead | Merged into literature and writing workflows | No verifiable literature result in the image |
+| `Screenshot_20260401_032814_com_ss_android_ugc_aw.jpg` | Canvas, Google Stitch, and front-end advice / external reference | Only research-software interface principles retained | General front-end material; outside core analysis scope |
+| `Screenshot_20260414_160809_com_xingin_xhs_NoteDe.jpg` | OmicsClaw multi-omics desktop agent / external project | Official repository indexed; not included in installer | Official lead found; version and data boundaries pending |
+| `Screenshot_20260417_083820_com_ss_android_ugc_aw.jpg` | Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution / methodology lead | Merged into `research-coding` review principles | Names visible; original publisher unverified |
+| `Screenshot_20260612_213250_com_ss_android_ugc_aw.jpg` | PaperSpine, Nature tools, paper-to-PPT, data availability, Scholar MCP / collection lead | Kept as unresolved leads; no compatibility claim | Stable official links and licenses incomplete |
+| `Screenshot_20260624_122954_com_tencent_mm_TmplWe.jpg` | `create-plan` and Superpowers / project and planning lead | Rewritten as research planning and staged acceptance | Superpowers repository found |
+| `Screenshot_20260624_122959_com_tencent_mm_TmplWe.jpg` | Staged development and multi-agent execution / project lead | Merged into planning, review, and acceptance fields | External description only; no compatibility claim |
+| `Screenshot_20260624_123006_com_tencent_mm_TmplWe.jpg` | `gh-fix-ci`: read logs, locate, repair, recheck / Prompt lead | Added `ci-failure-diagnosis` | Name readable; upstream implementation not copied |
+| `Screenshot_20260624_123010_com_tencent_mm_TmplWe.jpg` | Humanizer and reduced AI-writing traces / external writing lead | Added evidence-bounded naturalization Prompt and external link | Naturalization is not a correctness guarantee |
+| `Screenshot_20260624_123018_com_tencent_mm_TmplWe.jpg` | `claude-mem` cross-session memory / external memory lead | Handoff Skill covers the research use case; external tool risks tracked separately | Candidate repository found; screenshot source and license pending |
+| `Screenshot_20260624_165527_com_tencent_mm_TmplWe.jpg` | `make-interfaces-feel-better` / external project | Research-software interface checks retained | Project lead found; no Skill copied |
+| `Screenshot_20260712_143641_com_ss_android_ugc_aw.jpg` | Write `HANDOFF.md` before a session ends / Prompt lead | Merged into `agent-memory-handoff` | Readable screenshot; independently rewritten |
+| `Screenshot_20260716_225736_com_ss_android_ugc_aw.jpg` | Understand data and literature before figures; keep SVG / Prompt lead | Added `data-first-figure-workflow` | Advice visible; no data permission supplied |
+| `Screenshot_20260717_193646_com_ss_android_ugc_aw.jpg` | Emil Kowalski Apple-style design Skill / external project | Interface project indexed only for research-software use | Repository found; no Apple affiliation |
+| `Screenshot_20260723_000913_com_ss_android_ugc_aw.jpg` | Five collaborative perspectives / Prompt lead | Added `five-perspective-review` | Roles are not independent evidence sources |
+| `Screenshot_20260724_014354_com_ss_android_ugc_aw.jpg` | PRD, SOP, roadmap, and README before coding / Prompt lead | Added `requirements-before-implementation` | Screenshot readable; success-rate claims excluded |
+| `Screenshot_20260724_232659_com_ss_android_ugc_aw.jpg` | Academic writing, citation, statistics, figures, brainstorming, and presentation list / index lead | Compared with current indexes and added reusable Prompts | Secondary list; original source pending |
+| `Screenshot_20260728_105423_com_tencent_mm_TmplWe.jpg` | Nature-style search, writing, figures, review, responses, and patents / collection lead | Extracted general literature, writing, figure, and response workflows | Collection source and license incomplete |
+| `Screenshot_20260815_214119_com_ss_android_ugc_aw.jpg` | Journal title, impact factor, article title, and Chinese metadata / Prompt lead | Added `journal-metadata-check` | Dynamic metrics require source and access date |
+| `Screenshot_20260820_160331_com_ss_android_ugc_aw.jpg` | Three-layer bulk RNA-seq workflow, example GSE158395 / analysis lead | Compared with `rnaseq-analysis`; screenshot data not used as results | Example is not repository data |
+| `Screenshot_20260825_195803_com_ss_android_ugc_aw.jpg` | Check faulty premises, information gaps, predictions, and opinions / quality principle | Merged into evidence-boundary checks | Method suggestion, not a validation result |
+| `Screenshot_20260902_090620_com_ss_android_ugc_aw.jpg` | Do not ask an agent for generic reviewer edits without data and constraints / quality principle | Strengthened `paper-review` inputs and conditional advice | Efficiency claims excluded |
+| `Screenshot_20260907_003446_com_xingin_xhs_NoteDe.jpg` | Conflicting `AGENTS.md`, permissions, and approval rules / quality principle | Rewritten as maintenance and Skill-boundary guidance | Platform-specific instructions not copied |
+| `Screenshot_20260910_234537_com_ss_android_ugc_aw.jpg` | WorkBuddy, ELI5, GitHub, and product-design tools / external reference | Research-relevant explanation and interface parts retained | Platform claims and installation counts unverified |
+| `Screenshot_20260910_234551_com_ss_android_ugc_aw.jpg` | Find reusable open-source projects before coding / Prompt lead | Merged into `source-reuse-review` | Rewritten as license and maintenance review |
+| `Screenshot_20260918_105640_com_ss_android_ugc_aw.jpg` | Understand data and literature before figures; keep a Markdown process record / Prompt lead | Merged into `data-first-figure-workflow` | Example values are not repository data |
+
 ## Source / 来源
 
 中文：来源为用户提供的本地截图；外部项目链接见 [`external-projects.md`](external-projects.md)，具体状态以官方仓库和文档为准。本文由仓库维护者独立整理和改写。

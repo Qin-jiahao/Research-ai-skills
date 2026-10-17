@@ -5,7 +5,7 @@ description: Draft, revise, and check academic manuscript sections when supplied
 
 # Academic Writing / 学术写作
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -19,7 +19,7 @@ This Skill helps researchers draft, restructure, and check academic manuscripts.
 
 Use it when manuscript material, a target section, and a defined writing task are available. It is suitable for paragraph revision, claim–evidence checks, and applying supplied journal requirements.
 
-## When to use / 适用场景
+## Common tasks / 常见任务
 
 - 起草或重写 Abstract、Introduction、Methods、Results、Discussion 等章节；
 - 改善段落之间的逻辑和信息顺序；
@@ -59,10 +59,10 @@ Major changes / 主要修改
 - 修改理由：
 
 Open questions / 待确认问题
-- 
+- [待填写 / to be provided]
 
 Verification notes / 核查提示
-- 
+- [待填写 / to be provided]
 ```
 
 ## Quality checks / 质量检查

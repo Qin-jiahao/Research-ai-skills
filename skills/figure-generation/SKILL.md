@@ -5,7 +5,7 @@ description: Specify reproducible research figures when real data and statistica
 
 # Figure Generation / 科研绘图
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -18,6 +18,12 @@ This Skill supports figure requirements, graphical specifications, and editable-
 在已有真实数据字段、统计摘要和图形目标时使用。它适合制定可编辑图形规范、核对图注和规划导出检查，不适合凭空生成研究结果。
 
 Use it when real data fields, statistical summaries, and a figure goal are available. It is suitable for editable-figure specifications, caption checks, and export planning, not for inventing results.
+
+## Boundaries / 边界
+
+没有真实数据、单位、误差定义或统计输出时，只能提出条件化的图形方案。不能把示例数据、截图数值或视觉偏好写成研究结果，也不能改变原始数据来获得期望图形。
+
+Without real data, units, error definitions, or statistical outputs, return only a conditional figure plan. Do not turn example values, screenshot values, or visual preferences into research results, and do not alter raw data to obtain a desired figure.
 
 ## Required inputs / 所需输入
 

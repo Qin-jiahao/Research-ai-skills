@@ -13,9 +13,13 @@ def main():
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
     source = args.skill_dir.resolve()
-    target = args.destination.resolve() / source.name
+    destination = args.destination.resolve()
+    target = destination / source.name
     if not (source/'SKILL.md').is_file():
         print(f'error: {source} does not contain SKILL.md', file=sys.stderr); return 2
+    # Never remove the source itself or copy a source into one of its children.
+    if target == source or source in target.parents or destination == source or source in destination.parents:
+        print(f'error: destination would overwrite or contain source: {destination}', file=sys.stderr); return 4
     if target.exists() and not args.force:
         print(f'error: destination exists: {target} (use --force to replace)', file=sys.stderr); return 3
     if args.dry_run:

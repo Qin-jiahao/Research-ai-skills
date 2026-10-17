@@ -7,7 +7,7 @@ metadata:
 
 # RNA-seq Analysis / RNA-seq 分析
 
-**Status / 状态:** v0.2.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -183,7 +183,7 @@ Reproducibility and limitations / 可复现性与局限性
 
 This Skill can plan and audit bulk RNA-seq analyses, but it cannot certify sample quality, experimental validity, or biological mechanism. It does not replace raw-data inspection, statistical judgment, domain review, or experimental validation. Small sample sizes, severe batch confounding, missing metadata, mismatched annotations, and poor libraries limit inference even when the software completes successfully.
 
-## Example / 示例
+## Complete-input example / 完整输入示例
 
 **Input / 输入:** 一份样本元数据表、FASTQ 文件清单、参考基因组版本和预设组间比较，要求制定差异表达和富集分析计划。
 
@@ -193,4 +193,14 @@ This Skill can plan and audit bulk RNA-seq analyses, but it cannot certify sampl
 
 **Expected output / English:** First audit sample mapping, replicate structure, batches, and library strandedness. Then specify QC, quantification, normalization, model, FDR, and enrichment universe. Mark every field that cannot be verified from real files as “to be provided”; generate no genes, p-values, or pathway results.
 
-**Source / 来源:** 来源于网络，自行整理汇总。
+## Incomplete-input example / 信息不足示例
+
+输入只有一张表达矩阵截图和“找差异基因”。输出应将样本单位、重复结构、物种、参考注释、批次、原始 counts、设计矩阵和运行记录标为“待补充”，暂停差异模型和富集分析，不生成基因、P 值或通路结果。
+
+If the input is only a screenshot of an expression matrix and “find differential genes,” mark the unit of analysis, replicate structure, species, reference annotation, batch, raw counts, design matrix, and execution record as missing. Pause differential and enrichment modeling and generate no genes, p-values, or pathways.
+
+## Source / 来源
+
+来源于网络和用户提供的 RNA-seq 流程材料，自行整理汇总；截图中的示例数据和结果未被复制或当作真实结果。
+
+Source: collected from online materials and user-provided RNA-seq workflow material, independently organized. Screenshot examples and results were not copied or treated as real results.

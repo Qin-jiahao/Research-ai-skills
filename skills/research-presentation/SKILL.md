@@ -5,7 +5,7 @@ description: Plan and review scientific slide decks when audience, time, evidenc
 
 # Research Presentation / 科研汇报
 
-**Status / 状态:** v0.2.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -183,6 +183,18 @@ Rehearsal notes / 演练提示
 - Are sources and permissions recorded for external materials, adapted figures, datasets, and software?
 - Are speaker notes, figures, numbers, and conclusions consistent?
 - Are checked items, items to verify, and undetermined items clearly separated?
+
+## Complete-input example / 完整输入示例
+
+输入包含受众、总时长、研究问题、研究设计、主要结果、图表、引用来源和问答目标。输出应形成逐页大纲、主张—证据表、时间分配和演练核查清单。
+
+The input contains the audience, total time, research question, study design, main results, figures, citations, and Q&A goal. The output should include a slide-by-slide outline, claim–evidence table, time allocation, and rehearsal checklist.
+
+## Incomplete-input example / 信息不足示例
+
+输入只有一张图和几句结论。输出应列出无法判断的样本量、单位、误差、统计方法、来源和受众信息，只给出条件化的版式建议，不扩写完整研究故事。
+
+If the input contains only one figure and a few conclusions, list the audience, sample size, units, uncertainty, statistical method, and provenance as undetermined. Give conditional layout advice rather than expanding a complete research story.
 
 ## Limitations / 限制
 

@@ -102,8 +102,28 @@ Check that the slide times do not exceed the total slot, while reserving time fo
 
 Do not include numbers, references, findings, sample sizes, or statistical conclusions that were not supplied. Use concise, natural academic English and avoid inflated language or vague praise.
 
+## Prompt contract / 提示词契约
+
+### 中文
+
+- **使用场景：** 为科研汇报规划故事线、逐页结构、证据和演练安排。
+- **输入要求：** 受众、总时长、研究问题、设计、结果、图表、引用来源和问答目标。
+- **输出要求：** 汇报定位、故事线、逐页大纲、主张—证据核查、引用与可读性检查、时间表和演练清单。
+- **禁止编造：** 不得新增数字、样本量、文献、统计结果、研究结论或许可信息。
+- **信息不足：** 先列出无法判断的受众、证据、单位、误差、统计方法和来源，只给条件化结构建议。
+- **双语示例：** 完整输入含受众、时长、研究问题、图表和引用，输出逐页计划；信息不足时只有一张图和几句结论，输出待核验项，不扩写完整故事。
+
+### English
+
+- **Use case:** Plan a research-presentation storyline, slide structure, evidence checks, and rehearsal.
+- **Required inputs:** Audience, total time, research question, design, results, figures, citations, and Q&A goal.
+- **Expected output:** Presentation brief, storyline, slide plan, claim–evidence audit, citation and readability checks, timing, and rehearsal checklist.
+- **Fabrication ban:** Do not add numbers, sample sizes, references, statistical results, conclusions, or permissions.
+- **Missing information:** List undetermined audience, evidence, units, uncertainty, methods, and provenance first and return conditional structure advice.
+- **Bilingual example:** With audience, time, question, figures, and citations, return a slide plan; with one figure and a few conclusions, return open checks and do not expand a complete story.
+
 ## Source / 来源
 
-来源于网络，自行整理汇总。
+来源于网络和用户提供的科研汇报材料，自行整理汇总；未复制第三方幻灯片或讲稿。
 
-Source: collected from public online materials and independently organized by the repository maintainer.
+Source: online materials and user-provided research-presentation material, independently organized. No third-party slides or scripts were copied.

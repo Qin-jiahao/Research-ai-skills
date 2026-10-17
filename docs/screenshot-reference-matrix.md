@@ -14,14 +14,14 @@
 | 先写计划、PRD、任务交接和阶段复盘 | `research-planning`、`research-coding` | 已覆盖 | 计划不能被表述为已完成的执行结果。 |
 | GitHub 项目复用和开源 Skill 检索 | `source-reuse-review` | 已覆盖 | 必须以官方仓库、文档、版本和许可证为准。 |
 | `bioSkills`、BioClaw、OmicsClaw、Scientific Agent Skills 等具体项目 | 外部项目索引 | 部分已核验 | 官方入口和许可证线索见 [`external-projects.md`](external-projects.md)；本仓库不把外部项目当作已安装或已复现内容。 |
-| 前端界面设计、Apple 风格设计 Skill | 暂不收录 | 超出当前科研仓库范围 | 除非用户明确扩展到科研软件界面设计，否则不新增通用前端 Skill。 |
-| 通用 humanizer、长期记忆、泛化多角色 Agent | 暂不单独收录 | 待评估 | 与科研写作、交接和代码审查有交叉，避免重复创建。 |
+| 前端界面设计、Apple 风格设计 Skill | 已收录科研软件界面子集 | 有限覆盖 | 只保留科研软件任务、数据来源、错误状态和可访问性检查，不收录通用前端模板，也不代表 Apple 官方关联。 |
+| 通用 humanizer、长期记忆、泛化多角色 Agent | 已收录科研适用子集 | 有限覆盖 | `academic-language-polish`、`agent-memory-handoff` 和 `multi-agent-review` 只覆盖科研写作、交接和审查场景，不承诺通用平台兼容性。 |
 
 ## English
 
 This file maps candidate themes from the user-provided screenshots to the repository. Screenshots are reference material, not factual sources or proof of permission. Authors, projects, installation counts, star counts, and promotional claims are not treated as facts until verified.
 
-The current repository covers academic writing and review, literature analysis, RNA-seq and research coding, evidence-aware figures, research presentations, planning and handoffs, and open-source reuse review. The external-project index now records official links and remaining verification points for bioSkills, BioClaw, OmicsClaw, and Scientific Agent Skills. These entries are references, not installed or reproduced content. Front-end design, generic humanizers, long-term memory, and general multi-agent workflows remain outside the current research-focused scope unless the user explicitly requests expansion.
+The current repository covers academic writing and review, literature analysis, RNA-seq and research coding, evidence-aware figures, research presentations, planning and handoffs, open-source reuse review, and limited research-software interface and multi-agent workflows. The external-project index records official links and remaining verification points for bioSkills, BioClaw, OmicsClaw, and Scientific Agent Skills. These entries are references, not installed or reproduced content. Generic front-end templates, detector-evasion tools, and platform-specific memory systems remain outside the current scope.
 
 The complete image-by-image intake record is in [`screenshot-intake-2026-10.md`](screenshot-intake-2026-10.md), and the external project table is in [`external-projects.md`](external-projects.md).
 

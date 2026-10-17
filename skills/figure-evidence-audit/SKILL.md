@@ -5,7 +5,7 @@ description: Plan and audit research figures from data, claims, methods, uncerta
 
 # Figure Evidence Audit / 科研图表证据审查
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -38,6 +38,12 @@ This Skill links figures to data, claims, methods, uncertainty, and provenance. 
 
 不得把相关性写成因果关系；不得省略分母、样本量或不确定性；不得用批次校正展示矩阵替代正式模型输入；不得为了版式修改原始数据；检查图表是否可编辑、可读、可追溯。
 
+## Limitations / 局限性
+
+该 Skill 不能从截图、草图或图形外观恢复原始数据，也不能证明统计模型、测量质量或生物学机制正确。缺少数据和分析记录时，输出只能停留在核查计划和待补充字段。
+
+This Skill cannot recover raw data from a screenshot, sketch, or visual appearance, and it cannot certify a statistical model, measurement quality, or biological mechanism. Without data and analysis records, limit the output to an audit plan and missing fields.
+
 ## Complete-input example / 完整输入示例
 
 输入包含数据字典、已核验结果表、预设统计方法、样本量、误差定义和目标期刊格式。输出为图表规格、图注草稿和逐项核查清单。
@@ -52,4 +58,26 @@ This Skill links figures to data, claims, methods, uncertainty, and provenance. 
 
 ## English
 
-Apply the same workflow and checks in English. Without data, definitions, methods, and provenance, return a specification and missing-information list only.
+### Use and boundaries
+
+Use this Skill for manuscript figures, presentation figures, statistical plots, omics figures, and editable vector figures. It cannot correct bad data, replace statistical analysis, or infer causality or significance from appearance.
+
+### Required inputs and workflow
+
+Provide raw or checked data, variable definitions, units and denominators, the research question and target claim, analytical methods and outputs, sample size and uncertainty, format requirements, citations, and license information. Check the data structure, define one main claim per figure, choose a compatible graphic, record transformations and annotations, specify editable output, and perform independent numerical and readability checks.
+
+### Output and quality checks
+
+Return a figure specification with purpose, data, statistical unit, groups, axes and units, uncertainty, method, caption, provenance, output format, open questions, a claim–evidence table, and a quality record. Do not turn association into causality, omit denominators or uncertainty, use a batch-corrected display matrix as model input, or alter raw data for layout.
+
+### Complete-input example
+
+Input: a data dictionary, checked result table, prespecified method, sample size, error definition, and journal format. Expected output: a figure specification, caption draft, claim–evidence links, and an itemized audit checklist.
+
+### Incomplete-input example
+
+Input: only a screenshot and “make it look better.” Expected handling: state that data, units, groups, sample size, method, and provenance cannot be determined; return missing fields and no new figure or conclusion.
+
+### Source
+
+The Skill was independently organized from the supplied screenshots. Authors, URLs, and licenses for the screenshot material were not reliably identifiable, and no screenshot text was copied.

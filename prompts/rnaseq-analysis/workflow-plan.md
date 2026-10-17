@@ -112,3 +112,29 @@ List the metadata snapshot, raw-data checksums, scripts, configurations, environ
 List only risks that could change the conclusion, such as uncertain sample identity, complete batch confounding, too few biological replicates, unknown strandedness, annotation mismatch, missing data, contamination, or influential outliers. For each risk, state the evidence or next check needed.
 
 End with “steps that can be executed now” and “steps blocked until information is supplied.” If inputs are insufficient, remain at the planning level and do not fill in fictional results.
+
+## Prompt contract / 提示词契约
+
+### 中文
+
+- **使用场景：** 为 bulk RNA-seq 数据制定或审查从设计、QC、定量到差异和富集分析的流程。
+- **输入要求：** 样本元数据、FASTQ 或 counts 清单、物种和参考版本、建库方向、批次、预设对比和运行环境。
+- **输出要求：** 信息完整性表、QC 与定量计划、设计矩阵、统计模型、富集背景集、可复现记录和风险清单。
+- **禁止编造：** 不得生成差异基因、P 值、FDR、通路、样本质量或运行成功记录。
+- **信息不足：** 将缺少的样本单位、重复、链特异性、参考注释或日志标为待补充，暂停受影响步骤。
+- **双语示例：** 完整输入含元数据、FASTQ 清单和预设对比，输出可核验流程；信息不足时只有表达矩阵截图，输出待补充清单，不给结果。
+
+### English
+
+- **Use case:** Plan or audit a bulk RNA-seq workflow from design and QC through quantification, differential analysis, and enrichment.
+- **Required inputs:** Sample metadata, FASTQ or count manifest, species and reference versions, strandedness, batches, prespecified contrasts, and environment.
+- **Expected output:** Completeness table, QC and quantification plan, design matrix, model, enrichment universe, reproducibility record, and risk list.
+- **Fabrication ban:** Do not generate genes, p-values, FDR, pathways, sample-quality claims, or execution-success records.
+- **Missing information:** Mark missing unit, replication, strandedness, annotation, or logs as to be provided and pause affected steps.
+- **Bilingual example:** With metadata, a FASTQ manifest, and a prespecified contrast, return an auditable workflow; with only an expression-matrix screenshot, return missing fields and no results.
+
+## Source / 来源
+
+来源于网络和用户提供的 RNA-seq 流程截图，自行整理汇总；截图中的示例数据和结果未被复制或当作真实结果。
+
+Source: online materials and user-provided RNA-seq workflow screenshots, independently organized. Screenshot examples and results were not copied or treated as real results.

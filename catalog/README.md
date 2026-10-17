@@ -1,8 +1,12 @@
 # Resource catalog / 资源目录
 
-`resources.json` is the canonical inventory for the 31 resource themes extracted from the collected screenshots. It separates local released content from external references.
+`resources.json` is the canonical inventory for the 31 resource themes extracted from the collected screenshots. It separates local released content from external references. `released` means included in this repository; it does not mean that a Skill has been validated on real research data.
 
-`resources.json` 是从截图整理出的 31 个资源主题的唯一目录。它把本仓库已发布内容和外部参考项目分开记录。
+`resources.json` 是从截图整理出的 31 个资源主题的唯一目录。它把本仓库已发布内容和外部参考项目分开记录。`released` 表示已纳入本仓库版本，不表示 Skill 已通过真实科研数据验证。
+
+`resources.tsv` is a separate, human-readable index of external projects. It is not a second copy of the R01–R31 inventory. The TSV uses `to_verify` for license fields that still require an upstream check; the JSON status remains the source of truth for repository resource states.
+
+`resources.tsv` 是外部项目的独立索引，不是 R01–R31 目录的第二份副本。TSV 中的 `to_verify` 表示许可证仍需核验；仓库资源状态以 JSON 为准。
 
 The image-by-image evidence ledger is [`../docs/screenshot-intake-2026-10.md`](../docs/screenshot-intake-2026-10.md). External project links, attribution, license notes, and unresolved provenance are maintained in [`../docs/external-projects.md`](../docs/external-projects.md).
 

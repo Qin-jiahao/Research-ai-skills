@@ -1,43 +1,41 @@
 # Changelog
 
+## [Unreleased]
+
+- 补齐旧版 Skill 和 Prompt 的适用场景、输入、输出、禁止编造、信息不足处理、双语示例和来源说明。
+- 统一 Skill 的成熟度标记与资源目录的发布状态，明确 `draft` 与 `released` 的含义不同。
+- 改进本地安装器，拒绝源目录本身或源目录内部的目标路径，避免 `--force` 误删源文件。
+- 修正安装说明、截图主题对应表、资源目录说明和贡献指南中的状态与范围表述。
+- 更新静态校验边界，准备检查全部 Prompt 的结构、资源目录和安装器边界。
+
+- Added use cases, inputs, outputs, fabrication limits, missing-information handling, bilingual examples, and provenance notes to the older Skills and Prompts.
+- Separated Skill maturity from catalog release state and documented the distinct meanings of `draft` and `released`.
+- Hardened the local installer so a forced install cannot target the source directory or a directory inside it.
+- Corrected status and scope wording in the installation guide, screenshot matrix, catalog documentation, and contribution guide.
+- Extended the static-validation boundary to cover all Prompt structure, the resource catalog, and installer edge cases.
+
 ## 0.2.0 - 2026-10-16
 
-- Added a canonical bilingual resource catalog covering R01–R31.
-- Added explicit resource states for collected, reviewed, tested, and released material.
-- Added a safe local Skill installer and extended static validation to check catalog IDs and local paths.
-- Documented installation and coverage test boundaries without claiming unverified client compatibility.
+- 建立双语 R01–R31 资源目录，区分 collected、reviewed、tested 和 released。
+- 加入本地 Skill 安装脚本，并记录安装测试边界。
+- 建立 35 张截图的双语整理台账，区分独立改写的 Prompt、外部项目线索和待核验内容。
+- 新增需求文档、CI 失败诊断、数据先行绘图、五视角审查、期刊元数据核验和证据边界内的语言润色 Prompt。
+- 补充外部项目链接、作者归属、许可证边界和复用限制。
 
-## [0.1.0] - 2026-10-14
+- Added a bilingual R01–R31 resource catalog with collected, reviewed, tested, and released states.
+- Added a local Skill installer and documented its test boundaries.
+- Added a bilingual intake ledger for all 35 screenshots, separating rewritten Prompts, external project leads, and unresolved provenance.
+- Added Prompts for requirements before implementation, CI failure diagnosis, data-first figures, five-perspective review, journal metadata checks, and evidence-bounded naturalization.
+- Added external project links, attribution, license boundaries, and reuse limitations.
+
+## 0.1.0 - 2026-10-14
 
 - 建立双语 README 和基础仓库结构。
 - 确定 Skills 与 Prompts 共存于一个仓库。
-- 加入五个双语 Skill 初稿。
-- 加入五个双语 Prompt 和测试清单。
-- 加入五个 Skill 的双语示例。
+- 加入基础双语 Skill、Prompt、示例和测试清单。
+- 为 Skill 补充标准 YAML frontmatter，并更新索引和维护说明。
 
-## [Unreleased]
-
-- 建立 35 张截图的双语整理台账，区分已独立改写的 Prompt、外部项目线索和待核验内容；补充公开项目链接、作者归属与许可证边界说明。
-- 新增需求文档、CI 失败诊断、数据先行绘图、五视角审查、期刊元数据核验和有证据边界的自然化润色 Prompt。
-- 修正资源目录中的外部项目入口和新增 Prompt 路径，不把截图中的宣传语、示例数值或运行结果写成科研事实。
-
-- Added a bilingual intake ledger for all 35 screenshots, separating independently rewritten Prompts, external project leads, and unresolved provenance; added public links, attribution, and license boundaries.
-- Added Prompts for requirements before implementation, CI failure diagnosis, data-first figures, five-perspective review, journal metadata checks, and evidence-bounded naturalization.
-- Updated external project links and local Prompt paths in the resource catalog without treating screenshot claims, example values, or execution results as research facts.
-
-- 加入双语 `rnaseq-analysis` Skill、Prompt 和工作流示例。
-- 加入双语 `research-coding` Skill、Prompt 和可复现分析示例。
-- 加入双语 `research-presentation` Skill、Prompt 和逐页汇报示例。
-- 为全部 Skill 补充标准 YAML frontmatter，便于支持 Skill 加载的平台识别。
-- 更新 Skill、Prompt 索引和仓库路线说明。
-- 待补充真实公开数据测试和更完整的来源记录。
-
-- Add bilingual `rnaseq-analysis` Skill, Prompt, and workflow example.
-- Add bilingual `research-coding` Skill, Prompt, and reproducible-analysis example.
-- Add bilingual `research-presentation` Skill, Prompt, and slide-outline example.
-- Add standard YAML frontmatter to the Skills for platforms that support Skill loading.
-- Update the Skill and Prompt indexes and repository roadmap.
-- Public-data tests and more complete provenance records are still pending.
-
-- 新增 `research-planning`、`figure-evidence-audit` 和 `source-reuse-review` 双语 Skill 草稿及对应 Prompt。内容根据用户提供的截图整理，来源仍需逐项核验。
-- Added bilingual draft Skills for research planning, figure-evidence auditing, and open-source reuse review, with corresponding Prompts. Screenshot provenance remains to be verified item by item.
+- Added the bilingual README and initial repository structure.
+- Established one repository for Skills and Prompts.
+- Added initial bilingual Skills, Prompts, examples, and checklists.
+- Added standard YAML frontmatter for Skills and updated indexes and maintenance notes.

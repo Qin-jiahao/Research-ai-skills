@@ -5,7 +5,7 @@ description: Review whether an existing open-source repository or tool can be re
 
 # Source and Reuse Review / 来源与复用审查
 
-**Status / 状态:** v0.1.0 draft
+**Maturity / 成熟度:** draft
 
 ## Purpose / 用途
 
@@ -32,7 +32,27 @@ This Skill checks existing projects, maintenance status, licenses, scope, and de
 
 ## Examples / 示例
 
-完整输入应包含任务、候选仓库和运行环境；信息不足时应明确写出无法核验仓库维护状态、许可证兼容性或数据安全边界。
+### Complete input / 完整输入
+
+输入包含研究任务、候选仓库 URL、目标版本、运行环境、数据访问限制和许可证要求。输出应给出功能匹配、维护和依赖风险、许可证义务、直接使用/二次开发/自研三种路径及条件化建议。
+
+### Incomplete input / 信息不足
+
+输入只有一个项目名称或截图。输出应说明无法核验仓库维护状态、许可证兼容性、依赖和数据安全边界，列出需要补充的官方 URL、版本和运行环境，不给出确定的采用建议。
+
+## Quality checks / 质量检查
+
+- 是否使用官方仓库、文档、许可证和版本页面作为证据；
+- 是否记录访问日期、提交或版本标识；
+- 是否把许可证义务与功能评价分开；
+- 是否检查依赖、权限、网络访问和数据传输；
+- 是否区分截图线索、静态阅读和实际运行结果。
+
+- Are official repositories, documentation, licenses, and releases used as evidence?
+- Are access dates and commit or release identifiers recorded?
+- Are license obligations separated from functional assessment?
+- Are dependencies, permissions, network access, and data transfer checked?
+- Are screenshot leads, static reading, and execution results distinguished?
 
 ## Limitations / 局限性
 
@@ -44,4 +64,26 @@ This Skill checks existing projects, maintenance status, licenses, scope, and de
 
 ## English
 
-Use official project pages and record access dates. Treat popularity metrics and promotional claims as non-evidence. Mark unknown license, maintenance, security, and compatibility items as “to be verified.”
+### Use, boundaries, and inputs
+
+Use this Skill before implementing a research tool when an existing repository may be reused. It compares direct use, adaptation, and independent implementation. Popularity metrics, screenshots, and promotional claims are not evidence. Provide the task, candidate URLs, target version, execution environment, data-access limits, and license requirements.
+
+### Workflow and output
+
+Check official documentation, releases, maintenance, license, dependencies, permissions, data access, and security. Record access dates, evidence links, unknowns, and license obligations. Return a comparison table, risks, conditions, and items requiring human confirmation.
+
+### Quality checks and limitations
+
+Separate static inspection from execution. Mark inaccessible or unverified information as “to be verified.” Web pages and licenses can change; this review is not legal advice, a security audit, or proof that a project will work in a particular environment.
+
+### Complete-input example
+
+Input: a research task, two repository URLs, a target release, a container environment, a data-permission rule, and an MIT-only constraint. Expected output: an evidence-linked comparison and conditional recommendation.
+
+### Incomplete-input example
+
+Input: only a screenshot and a project name. Expected handling: list the missing official URL, version, license, dependencies, and data-access information and avoid a definitive recommendation.
+
+### Source
+
+This Skill was independently organized from the supplied open-source reuse screenshots and public-project review requirements. No upstream text was copied.
